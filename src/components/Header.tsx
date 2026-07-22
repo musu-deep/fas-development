@@ -36,10 +36,17 @@ export default function Header() {
     >
       <div className="container mx-auto px-6">
         <div className="flex h-[88px] items-center justify-between gap-6">
-          <Link href="#home" className="group flex items-center">
-            <div className="relative">
-              <div className="absolute inset-2 rounded-2xl bg-primary/25 blur-xl opacity-60 transition-opacity group-hover:opacity-100" />
-              <BrandLogo className="relative h-16 w-auto logo-glow" priority />
+          <Link
+            href="#home"
+            className="group flex h-16 w-[190px] shrink-0 items-center justify-start overflow-hidden"
+            aria-label="فرح التنمية"
+          >
+            <div className="relative flex h-16 w-full items-center justify-start overflow-hidden">
+              <div className="absolute inset-y-3 right-3 w-28 rounded-2xl bg-primary/25 blur-xl opacity-60 transition-opacity group-hover:opacity-100" />
+              <BrandLogo
+                className="relative block max-h-[60px] max-w-[185px] object-contain logo-glow"
+                priority
+              />
             </div>
           </Link>
 
@@ -81,8 +88,8 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-80 border-primary/15 bg-background/95 backdrop-blur-xl">
               <div className="flex h-full flex-col pt-6">
-                <div className="mb-8 flex items-center justify-center border-b border-primary/15 pb-7">
-                  <BrandLogo className="h-28 w-auto logo-glow" priority />
+                <div className="mb-8 flex h-32 items-center justify-center overflow-hidden border-b border-primary/15 pb-7">
+                  <BrandLogo className="block max-h-24 max-w-[230px] object-contain logo-glow" priority />
                 </div>
 
                 <nav className="flex flex-col gap-2">
