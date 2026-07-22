@@ -75,7 +75,7 @@ export default function Header() {
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-lg text-foreground">
-                  فرج التنمية
+                  فرح التنمية
                 </span>
                 <span className="text-xs text-muted-foreground tracking-wider">
                   FAS DEVELOPMENT
@@ -119,7 +119,7 @@ export default function Header() {
                     </div>
                     <div className="flex flex-col">
                       <span className="font-bold text-foreground">
-                        فاس التنموية
+                        فرح التنمية
                       </span>
                       <span className="text-xs text-muted-foreground">
                         FAS DEVELOPMENT
@@ -151,11 +151,11 @@ export default function Header() {
                       <span>fasdevgroup@gmail.com</span>
                     </a>
                     <a
-                      href="tel:+44501501643"
+                      href="tel:00966561637935"
                       className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary"
                     >
                       <Phone className="w-4 h-4" />
-                      <span dir="ltr"> 501 501 643</span>
+                      <span dir="ltr"> 0561637935</span>
                     </a>
                     <Button className="w-full gradient-gold text-black font-semibold mt-4">
                       احجز استشارة
