@@ -2,24 +2,32 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "فاس التنموية | FAS Development - شريكك الاستراتيجي في بناء المستقبل",
+  title: "فرح التنمية | Farah Development",
   description:
-    "مجموعة فاس التنموية - رواد في المقاولات والتطوير العقاري، التجارة العامة، التكنولوجيا، الرعاية الصحية، السياحة، النقل، والاستثمار الرياضي. رؤية 2026",
+    "فرح التنمية شريك مؤسسي في تطوير الأعمال والمشروعات، والاستشارات، والتقنية والذكاء الاصطناعي، وبناء الشراكات ذات الأثر.",
   keywords: [
-    "فاس التنموية",
+    "فرح التنمية",
+    "Farah Development",
     "FAS Development",
-    "مقاولات",
-    "تطوير عقاري",
-    "استثمار",
-    "تكنولوجيا",
-    "لندن",
+    "التطوير المؤسسي",
+    "الاستشارات",
+    "الذكاء الاصطناعي",
+    "التقنية",
+    "الاستثمار",
+    "السعودية",
   ],
-  authors: [{ name: "FAS Development Group" }],
+  authors: [{ name: "Farah Development" }],
   openGraph: {
-    title: "فاس التنموية | FAS Development",
-    description: "شريكك الاستراتيجي في بناء المستقبل ودعم الاقتصاد الوطني",
+    title: "فرح التنمية | Farah Development",
+    description: "نحو مستقبل تنموي أكثر وضوحاً وتأثيراً واستدامة.",
     type: "website",
     locale: "ar_SA",
+    siteName: "Farah Development",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "فرح التنمية | Farah Development",
+    description: "شريكك في التطوير المؤسسي وبناء المستقبل.",
   },
 };
 
@@ -29,8 +37,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar" dir="rtl">
+    <html lang="ar" dir="rtl" className="dark">
       <head>
+        <meta name="theme-color" content="#0b0a18" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
