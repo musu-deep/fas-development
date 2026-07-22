@@ -1,10 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { Mail, Menu, Phone } from "lucide-react";
+import BrandLogo from "@/components/BrandLogo";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, X, Phone, Mail } from "lucide-react";
-import Link from "next/link";
 
 const navItems = [
   { name: "الرئيسية", href: "#home" },
@@ -19,154 +20,120 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 24);
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <>
-      {/* Top Bar */}
-      <div className="hidden lg:block bg-primary/10 border-b border-primary/20">
-        <div className="container mx-auto px-6 py-2">
-          <div className="flex items-center justify-between text-sm">
-            <div className="flex items-center gap-6">
-              <a
-                href="mailto:fasdevgroup@gmail.com"
-                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Mail className="w-4 h-4" />
-                <span>fasdevgroup@gmail.com</span>
-              </a>
-              <a
-                href="tel:+44501501643"
-                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Phone className="w-4 h-4" />
-                <span dir="ltr">+44 501 501 643</span>
-              </a>
+    <header
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? "border-b border-primary/15 bg-background/88 shadow-2xl shadow-black/20 backdrop-blur-xl"
+          : "border-b border-transparent bg-background/30 backdrop-blur-sm"
+      }`}
+    >
+      <div className="container mx-auto px-6">
+        <div className="flex h-[88px] items-center justify-between gap-6">
+          <Link href="#home" className="group flex items-center gap-3">
+            <div className="relative">
+              <div className="absolute inset-0 rounded-2xl bg-primary/25 blur-xl opacity-60 transition-opacity group-hover:opacity-100" />
+              <div className="relative flex h-14 w-14 items-center justify-center rounded-2xl border border-primary/20 bg-card/80 p-1.5 shadow-lg shadow-primary/10">
+                <BrandLogo variant="mark" className="h-11 w-11" priority />
+              </div>
             </div>
-            <div className="text-muted-foreground">
-              182-184 High Street North, East Ham, London, E6 2JA
+            <div className="hidden flex-col sm:flex">
+              <span className="text-lg font-extrabold leading-tight text-foreground">
+                فرح التنمية
+              </span>
+              <span className="text-[10px] font-medium tracking-[0.24em] text-primary/90" dir="ltr">
+                FARAH DEVELOPMENT
+              </span>
             </div>
+          </Link>
+
+          <nav className="hidden items-center gap-1 lg:flex">
+            {navItems.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="rounded-xl px-4 py-2.5 text-sm font-medium text-foreground/75 transition-all hover:bg-primary/8 hover:text-primary"
+              >
+                {item.name}
+              </a>
+            ))}
+          </nav>
+
+          <div className="hidden items-center gap-3 lg:flex">
+            <a
+              href="tel:00966561637935"
+              className="hidden items-center gap-2 text-xs text-muted-foreground transition-colors hover:text-primary xl:flex"
+            >
+              <Phone className="h-4 w-4" />
+              <span dir="ltr">00966561637935</span>
+            </a>
+            <Button asChild className="gradient-brand px-6 font-semibold text-white shadow-lg shadow-primary/20 hover:opacity-90">
+              <a href="#contact">احجز استشارة</a>
+            </Button>
           </div>
+
+          <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+            <SheetTrigger asChild className="lg:hidden">
+              <Button
+                variant="outline"
+                size="icon"
+                className="border-primary/25 bg-card/70 text-foreground hover:bg-primary/10 hover:text-primary"
+                aria-label="فتح القائمة"
+              >
+                <Menu className="h-6 w-6" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-80 border-primary/15 bg-background/95 backdrop-blur-xl">
+              <div className="flex h-full flex-col pt-6">
+                <div className="mb-8 flex items-center justify-center border-b border-primary/15 pb-7">
+                  <BrandLogo className="h-28 w-auto logo-glow" priority />
+                </div>
+
+                <nav className="flex flex-col gap-2">
+                  {navItems.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="rounded-xl px-4 py-3 font-medium text-foreground/85 transition-colors hover:bg-primary/10 hover:text-primary"
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                </nav>
+
+                <div className="mt-auto space-y-4 border-t border-primary/15 pt-6">
+                  <a
+                    href="mailto:info@fasdev.org"
+                    className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
+                  >
+                    <Mail className="h-4 w-4" />
+                    <span>info@fasdev.org</span>
+                  </a>
+                  <a
+                    href="tel:00966561637935"
+                    className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
+                  >
+                    <Phone className="h-4 w-4" />
+                    <span dir="ltr">00966561637935</span>
+                  </a>
+                  <Button asChild className="gradient-brand mt-4 w-full font-semibold text-white">
+                    <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+                      ابدأ التواصل
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
-
-      {/* Main Header */}
-      <header
-        className={`fixed top-0 lg:top-[44px] left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? "bg-background/95 backdrop-blur-md shadow-lg shadow-black/20 border-b border-border"
-            : "bg-transparent"
-        }`}
-      >
-        <div className="container mx-auto px-6">
-          <div className="flex items-center justify-between h-20">
-            {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative">
-                <div className="w-12 h-12 rounded-xl gradient-gold flex items-center justify-center font-bold text-xl text-black">
-                  FAS
-                </div>
-                <div className="absolute -inset-1 rounded-xl bg-primary/20 blur-lg opacity-0 group-hover:opacity-100 transition-opacity" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-bold text-lg text-foreground">
-                  فرح التنمية
-                </span>
-                <span className="text-xs text-muted-foreground tracking-wider">
-                  FAS DEVELOPMENT
-                </span>
-              </div>
-            </Link>
-
-            {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-1">
-              {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors rounded-lg hover:bg-primary/5"
-                >
-                  {item.name}
-                </a>
-              ))}
-            </nav>
-
-            {/* CTA Button */}
-            <div className="hidden lg:flex items-center gap-4">
-              <Button className="gradient-gold text-black font-semibold hover:opacity-90 transition-opacity px-6">
-                احجز استشارة
-              </Button>
-            </div>
-
-            {/* Mobile Menu */}
-            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-              <SheetTrigger asChild className="lg:hidden">
-                <Button variant="ghost" size="icon">
-                  <Menu className="w-6 h-6" />
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="right" className="w-80 bg-card border-border">
-                <div className="flex flex-col h-full pt-8">
-                  {/* Mobile Logo */}
-                  <div className="flex items-center gap-3 mb-8 pb-6 border-b border-border">
-                    <div className="w-10 h-10 rounded-lg gradient-gold flex items-center justify-center font-bold text-black">
-                      FAS
-                    </div>
-                    <div className="flex flex-col">
-                      <span className="font-bold text-foreground">
-                        فرح التنمية
-                      </span>
-                      <span className="text-xs text-muted-foreground">
-                        FAS DEVELOPMENT
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Mobile Navigation */}
-                  <nav className="flex flex-col gap-2">
-                    {navItems.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        onClick={() => setIsMobileMenuOpen(false)}
-                        className="px-4 py-3 text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-colors"
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </nav>
-
-                  {/* Mobile Contact Info */}
-                  <div className="mt-auto pt-6 border-t border-border space-y-4">
-                    <a
-                      href="mailto:fasdevgroup@gmail.com"
-                      className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary"
-                    >
-                      <Mail className="w-4 h-4" />
-                      <span>fasdevgroup@gmail.com</span>
-                    </a>
-                    <a
-                      href="tel:00966561637935"
-                      className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary"
-                    >
-                      <Phone className="w-4 h-4" />
-                      <span dir="ltr"> 0561637935</span>
-                    </a>
-                    <Button className="w-full gradient-gold text-black font-semibold mt-4">
-                      احجز استشارة
-                    </Button>
-                  </div>
-                </div>
-              </SheetContent>
-            </Sheet>
-          </div>
-        </div>
-      </header>
-    </>
+    </header>
   );
 }
