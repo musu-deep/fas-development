@@ -49,7 +49,7 @@ export default function HeroSection() {
 
             {/* Description */}
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed animate-slide-up opacity-0 stagger-2">
-              مجموعة فاس التنموية - خبراء ريادة الأعمال والاستشارات التطويرية وقطاع،
+              فرح التنمية - خبراء ريادة الأعمال والاستشارات التطويرية وقطاع،
               التكنولوجيا والذكاء الاصطناعي، والرعاية الصحية، والاستثمار الرياضي. نبني المستقبل
               بمعايير تميز وجودة عالمية.
             </p>
