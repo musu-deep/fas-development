@@ -52,7 +52,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-xl text-foreground">
-                  فاس التنموية
+                  فرح التنمية
                 </span>
                 <span className="text-sm text-muted-foreground tracking-wider">
                   FAS DEVELOPMENT
@@ -75,15 +75,15 @@ export default function Footer() {
                 <span>fasdevgroup@gmail.com</span>
               </a>
               <a
-                href="tel:+44501501643"
+                href="tel:00966561637935"
                 className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                <span dir="ltr">+44 501 501 643</span>
+                <span dir="ltr">00966561637935</span>
               </a>
               <div className="flex items-start gap-3 text-muted-foreground">
                 <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                <span>182-184 High Street North, East Ham, London, E6 2JA</span>
+                <span>Ryiadh - Saudi Arabia </span>
               </div>
             </div>
           </div>
@@ -148,7 +148,7 @@ export default function Footer() {
       <div className="container mx-auto px-6 py-6 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground text-center md:text-right">
-            © {new Date().getFullYear()} مجموعة فاس التنموية. جميع الحقوق
+            © {new Date().getFullYear()} مجموعة فرح فاس التنموية. جميع الحقوق
             محفوظة.
           </p>
 
