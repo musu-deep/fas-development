@@ -30,26 +30,16 @@ export default function Header() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "border-b border-primary/15 bg-background/88 shadow-2xl shadow-black/20 backdrop-blur-xl"
+          ? "border-b border-primary/15 bg-background/90 shadow-2xl shadow-black/20 backdrop-blur-xl"
           : "border-b border-transparent bg-background/30 backdrop-blur-sm"
       }`}
     >
       <div className="container mx-auto px-6">
         <div className="flex h-[88px] items-center justify-between gap-6">
-          <Link href="#home" className="group flex items-center gap-3">
+          <Link href="#home" className="group flex items-center">
             <div className="relative">
-              <div className="absolute inset-0 rounded-2xl bg-primary/25 blur-xl opacity-60 transition-opacity group-hover:opacity-100" />
-              <div className="relative flex h-14 w-14 items-center justify-center rounded-2xl border border-primary/20 bg-card/80 p-1.5 shadow-lg shadow-primary/10">
-                <BrandLogo variant="mark" className="h-11 w-11" priority />
-              </div>
-            </div>
-            <div className="hidden flex-col sm:flex">
-              <span className="text-lg font-extrabold leading-tight text-foreground">
-                فرح التنمية
-              </span>
-              <span className="text-[10px] font-medium tracking-[0.24em] text-primary/90" dir="ltr">
-                FARAH DEVELOPMENT
-              </span>
+              <div className="absolute inset-2 rounded-2xl bg-primary/25 blur-xl opacity-60 transition-opacity group-hover:opacity-100" />
+              <BrandLogo className="relative h-16 w-auto logo-glow" priority />
             </div>
           </Link>
 
@@ -58,7 +48,7 @@ export default function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="rounded-xl px-4 py-2.5 text-sm font-medium text-foreground/75 transition-all hover:bg-primary/8 hover:text-primary"
+                className="rounded-xl px-4 py-2.5 text-sm font-medium text-foreground/75 transition-all hover:bg-primary/10 hover:text-primary"
               >
                 {item.name}
               </a>
