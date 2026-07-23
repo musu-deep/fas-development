@@ -2,6 +2,8 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
+import WorkshopsSection from "@/components/WorkshopsSection";
+import PartnersSection from "@/components/PartnersSection";
 import VisionSection from "@/components/VisionSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -21,6 +23,16 @@ export default function Home() {
       <div className="section-divider" />
 
       <ServicesSection />
+
+      {/* Section Divider */}
+      <div className="section-divider" />
+
+      <WorkshopsSection />
+
+      {/* Section Divider */}
+      <div className="section-divider" />
+
+      <PartnersSection />
 
       {/* Section Divider */}
       <div className="section-divider" />
