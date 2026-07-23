@@ -11,6 +11,7 @@ const navItems = [
   { name: "الرئيسية", href: "#home" },
   { name: "من نحن", href: "#about" },
   { name: "خدماتنا", href: "#services" },
+  { name: "ورش العمل", href: "#workshops" },
   { name: "الرؤية", href: "#vision" },
   { name: "تواصل معنا", href: "#contact" },
 ];
@@ -50,22 +51,22 @@ export default function Header() {
             </div>
           </Link>
 
-          <nav className="hidden items-center gap-1 lg:flex">
+          <nav className="hidden items-center gap-1 xl:flex">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="rounded-xl px-4 py-2.5 text-sm font-medium text-foreground/75 transition-all hover:bg-primary/10 hover:text-primary"
+                className="rounded-xl px-3.5 py-2.5 text-sm font-medium text-foreground/75 transition-all hover:bg-primary/10 hover:text-primary"
               >
                 {item.name}
               </a>
             ))}
           </nav>
 
-          <div className="hidden items-center gap-3 lg:flex">
+          <div className="hidden items-center gap-3 xl:flex">
             <a
               href="tel:00966561637935"
-              className="hidden items-center gap-2 text-xs text-muted-foreground transition-colors hover:text-primary xl:flex"
+              className="hidden items-center gap-2 text-xs text-muted-foreground transition-colors hover:text-primary 2xl:flex"
             >
               <Phone className="h-4 w-4" />
               <span dir="ltr">00966561637935</span>
@@ -76,7 +77,7 @@ export default function Header() {
           </div>
 
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-            <SheetTrigger asChild className="lg:hidden">
+            <SheetTrigger asChild className="xl:hidden">
               <Button
                 variant="outline"
                 size="icon"
