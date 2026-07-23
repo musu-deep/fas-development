@@ -139,7 +139,7 @@ export default function WorkshopsSection() {
               <div className="absolute inset-0 bg-primary/10 mix-blend-color" />
 
               <div className="absolute inset-x-0 bottom-0 p-7 md:p-10">
-                <Badge className="mb-4 border border-white/20 bg-black/35 text-white backdrop-blur-md">
+                <Badge className="mb-4 border border-white/20 bg-black/40 text-white backdrop-blur-md">
                   {activeWorkshop.category}
                 </Badge>
                 <h3 className="max-w-3xl text-2xl font-black leading-tight text-white md:text-4xl">
@@ -147,14 +147,14 @@ export default function WorkshopsSection() {
                 </h3>
               </div>
 
-              <div className="absolute left-5 top-5 rounded-full border border-white/15 bg-black/35 px-4 py-2 text-xs font-bold text-white backdrop-blur-md">
+              <div className="absolute left-5 top-5 rounded-full border border-white/20 bg-black/40 px-4 py-2 text-xs font-bold text-white backdrop-blur-md">
                 {String(activeIndex + 1).padStart(2, "0")} / {String(workshops.length).padStart(2, "0")}
               </div>
             </div>
 
             <div className="flex flex-col justify-between p-7 md:p-10">
               <div>
-                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/15 text-primary">
+                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
                   <Sparkles className="h-7 w-7" />
                 </div>
                 <p className="mb-8 text-base leading-8 text-muted-foreground md:text-lg">
@@ -210,7 +210,7 @@ export default function WorkshopsSection() {
               className={`group relative overflow-hidden rounded-2xl border text-right transition-all duration-300 ${
                 activeIndex === index
                   ? "border-primary/60 bg-primary/10 shadow-lg shadow-primary/10"
-                  : "border-primary/10 bg-card/55 hover:-translate-y-1 hover:border-primary/35"
+                  : "border-primary/10 bg-card/50 hover:-translate-y-1 hover:border-primary/40"
               }`}
             >
               <div className="relative h-28 overflow-hidden">
