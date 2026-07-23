@@ -1,5 +1,6 @@
 import { Handshake, Network, ShieldCheck } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import "./PartnersSection.module.css";
 
 const partners = [
   {
@@ -58,7 +59,7 @@ export default function PartnersSection() {
   return (
     <section id="partners" className="relative overflow-hidden py-20 lg:py-28">
       <div className="absolute inset-0 bg-background" />
-      <div className="absolute inset-0 grid-pattern opacity-15" />
+      <div className="absolute inset-0 grid-pattern opacity-20" />
       <div className="absolute left-1/2 top-0 h-72 w-[50rem] -translate-x-1/2 rounded-full bg-primary/10 blur-[130px]" />
 
       <div className="container relative z-10 mx-auto px-6">
@@ -80,15 +81,15 @@ export default function PartnersSection() {
         </div>
 
         <div className="partner-marquee-viewport relative overflow-hidden py-5" dir="ltr">
-          <div className="partner-marquee-track flex w-max gap-5 hover:[animation-play-state:paused]">
+          <div className="partner-marquee-track flex w-max gap-5">
             {marqueePartners.map((partner, index) => (
               <article
                 key={`${partner.mark}-${index}`}
-                className="glass-panel group flex min-h-[184px] w-[285px] shrink-0 flex-col items-center justify-center rounded-3xl px-6 py-7 text-center transition duration-300 hover:-translate-y-2 hover:border-primary/45"
+                className="glass-panel group flex min-h-[184px] w-[285px] shrink-0 flex-col items-center justify-center rounded-3xl px-6 py-7 text-center transition duration-300 hover:-translate-y-2 hover:border-primary/40"
               >
-                <div className="relative mb-5 flex h-16 min-w-[150px] items-center justify-center overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/15 via-white/[0.04] to-violet-900/15 px-5 shadow-inner">
+                <div className="relative mb-5 flex h-16 min-w-[150px] items-center justify-center overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-white/[0.04] to-violet-900/10 px-5 shadow-inner">
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/[0.08] to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-                  <span className="relative text-lg font-black tracking-[0.16em] text-foreground group-hover:text-primary">
+                  <span className="relative text-lg font-black tracking-[0.16em] text-foreground transition-colors group-hover:text-primary">
                     {partner.mark}
                   </span>
                 </div>
@@ -109,7 +110,7 @@ export default function PartnersSection() {
               key={item.title}
               className="rounded-3xl border border-primary/10 bg-card/45 p-6 backdrop-blur-md"
             >
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/12 text-primary">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
                 <item.icon className="h-6 w-6" />
               </div>
               <h3 className="mb-2 text-lg font-bold text-foreground">{item.title}</h3>
