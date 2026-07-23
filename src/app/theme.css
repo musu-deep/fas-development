@@ -1,0 +1,253 @@
+/* Day / night theme layer loaded after globals.css */
+
+html,
+body,
+header,
+section,
+footer,
+.glass-panel,
+.border-gradient,
+.gradient-radial,
+.gradient-dark {
+  transition:
+    background-color 320ms ease,
+    border-color 320ms ease,
+    color 240ms ease,
+    box-shadow 320ms ease,
+    filter 320ms ease;
+}
+
+html.light {
+  color-scheme: light;
+
+  --background: 44 38% 97%;
+  --foreground: 154 47% 12%;
+  --card: 45 45% 99%;
+  --card-foreground: 154 47% 12%;
+  --popover: 45 45% 99%;
+  --popover-foreground: 154 47% 12%;
+  --primary: 150 100% 21%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 145 25% 93%;
+  --secondary-foreground: 154 47% 14%;
+  --muted: 43 25% 92%;
+  --muted-foreground: 154 14% 38%;
+  --accent: 42 75% 49%;
+  --accent-foreground: 154 50% 13%;
+  --destructive: 0 68% 34%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 145 20% 82%;
+  --input: 45 30% 95%;
+  --ring: 150 100% 21%;
+  --chart-1: 150 100% 21%;
+  --chart-2: 150 54% 35%;
+  --chart-3: 42 75% 49%;
+  --chart-4: 0 68% 34%;
+  --chart-5: 160 30% 52%;
+}
+
+html.light body {
+  background-color: #f7f5ee;
+  background-image:
+    radial-gradient(circle at 84% 8%, rgba(0, 108, 53, 0.12), transparent 30%),
+    radial-gradient(circle at 12% 38%, rgba(185, 138, 43, 0.055), transparent 23%),
+    radial-gradient(circle at 92% 76%, rgba(142, 27, 27, 0.025), transparent 17%),
+    linear-gradient(180deg, #fffef9 0%, #f7f5ee 46%, #f1f5ef 100%);
+  background-attachment: fixed;
+}
+
+html.light ::selection {
+  color: #ffffff;
+  background: rgba(0, 108, 53, 0.78);
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: #edf2ec;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #0b8245, #006c35);
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #0d9150, #005b2c);
+}
+
+html.light .gradient-brand {
+  background: linear-gradient(135deg, #004b27 0%, #006c35 68%, #b98a2b 100%);
+}
+
+html.light .gradient-gold {
+  background: linear-gradient(135deg, #9a6f1c 0%, #c79a3b 55%, #ead6a0 100%);
+}
+
+html.light .gradient-brand-soft {
+  background:
+    linear-gradient(135deg, rgba(0, 108, 53, 0.11), rgba(185, 138, 43, 0.035)),
+    rgba(255, 254, 249, 0.82);
+}
+
+html.light .gradient-dark {
+  background: linear-gradient(180deg, #fffef9 0%, #eef5ef 100%);
+}
+
+html.light .gradient-radial {
+  background:
+    radial-gradient(circle at 72% 42%, rgba(0, 108, 53, 0.13), transparent 29%),
+    radial-gradient(circle at 27% 62%, rgba(185, 138, 43, 0.045), transparent 30%),
+    radial-gradient(circle at 87% 82%, rgba(142, 27, 27, 0.018), transparent 18%),
+    linear-gradient(180deg, #fffef9 0%, #f7f5ee 54%, #eef4ef 100%);
+}
+
+html.light .text-gradient {
+  background: linear-gradient(135deg, #004b27 0%, #006c35 70%, #a77a22 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+html.light .glow {
+  box-shadow:
+    0 24px 70px rgba(0, 65, 34, 0.1),
+    0 0 45px rgba(0, 108, 53, 0.08);
+}
+
+html.light .glow-text {
+  text-shadow: 0 0 28px rgba(0, 108, 53, 0.13);
+}
+
+html.light .logo-glow {
+  filter:
+    hue-rotate(245deg)
+    saturate(0.82)
+    brightness(0.88)
+    drop-shadow(0 0 20px rgba(0, 108, 53, 0.18));
+}
+
+html.light .glass-panel {
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(247, 245, 238, 0.72)),
+    rgba(255, 254, 249, 0.84);
+  border-color: rgba(0, 108, 53, 0.14);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    0 20px 54px rgba(0, 67, 34, 0.09),
+    0 1px 0 rgba(185, 138, 43, 0.08);
+}
+
+html.light .brand-ring {
+  box-shadow:
+    0 0 0 1px rgba(0, 108, 53, 0.17),
+    0 0 52px rgba(0, 108, 53, 0.11),
+    0 12px 38px rgba(185, 138, 43, 0.055);
+}
+
+html.light .grid-pattern {
+  background-image:
+    linear-gradient(rgba(0, 108, 53, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 108, 53, 0.045) 1px, transparent 1px);
+}
+
+@keyframes pulse-glow-light {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(0, 108, 53, 0.14);
+  }
+
+  50% {
+    box-shadow:
+      0 0 42px rgba(0, 108, 53, 0.25),
+      0 0 12px rgba(185, 138, 43, 0.08);
+  }
+}
+
+html.light .animate-pulse-glow {
+  animation-name: pulse-glow-light;
+}
+
+html.light .line-decoration::after {
+  background: linear-gradient(90deg, #006c35 0%, rgba(185, 138, 43, 0.38) 55%, transparent 100%);
+}
+
+html.light[dir="rtl"] .line-decoration::after {
+  background: linear-gradient(270deg, #006c35 0%, rgba(185, 138, 43, 0.38) 55%, transparent 100%);
+}
+
+html.light .card-hover:hover {
+  border-color: rgba(0, 108, 53, 0.3);
+  box-shadow:
+    0 22px 52px rgba(0, 67, 34, 0.12),
+    0 0 40px rgba(0, 108, 53, 0.07);
+}
+
+html.light .border-gradient {
+  background: #fffef9;
+}
+
+html.light .border-gradient::before {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 108, 53, 0.52) 0%,
+    rgba(0, 108, 53, 0.06) 52%,
+    rgba(185, 138, 43, 0.26) 100%
+  );
+}
+
+html.light .section-divider {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 108, 53, 0.24) 44%,
+    rgba(185, 138, 43, 0.16) 50%,
+    rgba(0, 108, 53, 0.24) 56%,
+    transparent 100%
+  );
+}
+
+/* Replace the violet ambient glows and service gradients in day mode. */
+html.light .bg-violet-700\/10,
+html.light .bg-fuchsia-700\/10 {
+  background-color: rgb(0 108 53 / 0.075);
+}
+
+html.light .bg-violet-300\/70 {
+  background-color: rgb(185 138 43 / 0.55);
+}
+
+html.light [class*="from-violet-"],
+html.light [class*="from-purple-"],
+html.light [class*="from-indigo-"],
+html.light [class*="from-fuchsia-"] {
+  --tw-gradient-from: #006c35 var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(0 108 53 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+html.light [class*="to-violet-"],
+html.light [class*="to-purple-"],
+html.light [class*="to-indigo-"],
+html.light [class*="to-fuchsia-"] {
+  --tw-gradient-to: #004b27 var(--tw-gradient-to-position) !important;
+}
+
+html.light header {
+  box-shadow: 0 12px 38px rgba(0, 67, 34, 0.07);
+}
+
+html.light .noise-overlay::before {
+  opacity: 0.32;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html,
+  body,
+  header,
+  section,
+  footer,
+  .glass-panel,
+  .border-gradient,
+  .gradient-radial,
+  .gradient-dark {
+    transition: none;
+  }
+}

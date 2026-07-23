@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./theme.css";
 
 export const metadata: Metadata = {
   title: "فرح التنمية | Farah Development",
@@ -31,14 +32,33 @@ export const metadata: Metadata = {
   },
 };
 
+const themeInitializationScript = `
+  (function () {
+    try {
+      var storedTheme = localStorage.getItem("fasdev-theme");
+      var theme = storedTheme === "light" || storedTheme === "dark"
+        ? storedTheme
+        : "dark";
+      var root = document.documentElement;
+      root.classList.remove("light", "dark");
+      root.classList.add(theme);
+      root.dataset.theme = theme;
+      root.style.colorScheme = theme;
+    } catch (error) {
+      document.documentElement.classList.add("dark");
+    }
+  })();
+`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar" dir="rtl" className="dark">
+    <html lang="ar" dir="rtl" className="dark" suppressHydrationWarning>
       <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitializationScript }} />
         <meta name="theme-color" content="#0b0a18" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

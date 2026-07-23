@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Mail, Menu, Phone } from "lucide-react";
 import BrandLogo from "@/components/BrandLogo";
+import ThemeToggle from "@/components/ThemeToggle";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -37,7 +38,7 @@ export default function Header() {
       }`}
     >
       <div className="container mx-auto px-6">
-        <div className="flex h-[88px] items-center justify-between gap-6">
+        <div className="flex h-[88px] items-center justify-between gap-4">
           <Link
             href="#home"
             className="group flex h-16 w-[190px] shrink-0 items-center justify-start overflow-hidden"
@@ -52,19 +53,21 @@ export default function Header() {
             </div>
           </Link>
 
-          <nav className="hidden items-center gap-1 xl:flex">
+          <nav className="hidden items-center gap-0.5 xl:flex">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="rounded-xl px-3 py-2.5 text-sm font-medium text-foreground/75 transition-all hover:bg-primary/10 hover:text-primary"
+                className="rounded-xl px-2.5 py-2.5 text-sm font-medium text-foreground/75 transition-all hover:bg-primary/10 hover:text-primary 2xl:px-3"
               >
                 {item.name}
               </a>
             ))}
           </nav>
 
-          <div className="hidden items-center gap-3 xl:flex">
+          <div className="flex items-center gap-2.5">
+            <ThemeToggle />
+
             <a
               href="tel:00966561637935"
               className="hidden items-center gap-2 text-xs text-muted-foreground transition-colors hover:text-primary 2xl:flex"
@@ -72,65 +75,69 @@ export default function Header() {
               <Phone className="h-4 w-4" />
               <span dir="ltr">00966561637935</span>
             </a>
-            <Button asChild className="gradient-brand px-6 font-semibold text-white shadow-lg shadow-primary/20 hover:opacity-90">
+
+            <Button
+              asChild
+              className="gradient-brand hidden px-5 font-semibold text-white shadow-lg shadow-primary/20 hover:opacity-90 xl:inline-flex"
+            >
               <a href="#contact">احجز استشارة</a>
             </Button>
-          </div>
 
-          <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-            <SheetTrigger asChild className="xl:hidden">
-              <Button
-                variant="outline"
-                size="icon"
-                className="border-primary/25 bg-card/70 text-foreground hover:bg-primary/10 hover:text-primary"
-                aria-label="فتح القائمة"
-              >
-                <Menu className="h-6 w-6" />
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-80 border-primary/15 bg-background/95 backdrop-blur-xl">
-              <div className="flex h-full flex-col pt-6">
-                <div className="mb-8 flex h-32 items-center justify-center overflow-hidden border-b border-primary/15 pb-7">
-                  <BrandLogo className="block max-h-24 max-w-[230px] object-contain logo-glow" priority />
-                </div>
+            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+              <SheetTrigger asChild className="xl:hidden">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="border-primary/25 bg-card/70 text-foreground hover:bg-primary/10 hover:text-primary"
+                  aria-label="فتح القائمة"
+                >
+                  <Menu className="h-6 w-6" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-80 border-primary/15 bg-background/95 backdrop-blur-xl">
+                <div className="flex h-full flex-col pt-6">
+                  <div className="mb-8 flex h-32 items-center justify-center overflow-hidden border-b border-primary/15 pb-7">
+                    <BrandLogo className="block max-h-24 max-w-[230px] object-contain logo-glow" priority />
+                  </div>
 
-                <nav className="flex flex-col gap-2">
-                  {navItems.map((item) => (
+                  <nav className="flex flex-col gap-2">
+                    {navItems.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className="rounded-xl px-4 py-3 font-medium text-foreground/85 transition-colors hover:bg-primary/10 hover:text-primary"
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </nav>
+
+                  <div className="mt-auto space-y-4 border-t border-primary/15 pt-6">
                     <a
-                      key={item.name}
-                      href={item.href}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      className="rounded-xl px-4 py-3 font-medium text-foreground/85 transition-colors hover:bg-primary/10 hover:text-primary"
+                      href="mailto:info@fasdev.org"
+                      className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
                     >
-                      {item.name}
+                      <Mail className="h-4 w-4" />
+                      <span>info@fasdev.org</span>
                     </a>
-                  ))}
-                </nav>
-
-                <div className="mt-auto space-y-4 border-t border-primary/15 pt-6">
-                  <a
-                    href="mailto:info@fasdev.org"
-                    className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
-                  >
-                    <Mail className="h-4 w-4" />
-                    <span>info@fasdev.org</span>
-                  </a>
-                  <a
-                    href="tel:00966561637935"
-                    className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
-                  >
-                    <Phone className="h-4 w-4" />
-                    <span dir="ltr">00966561637935</span>
-                  </a>
-                  <Button asChild className="gradient-brand mt-4 w-full font-semibold text-white">
-                    <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
-                      ابدأ التواصل
+                    <a
+                      href="tel:00966561637935"
+                      className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
+                    >
+                      <Phone className="h-4 w-4" />
+                      <span dir="ltr">00966561637935</span>
                     </a>
-                  </Button>
+                    <Button asChild className="gradient-brand mt-4 w-full font-semibold text-white">
+                      <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+                        ابدأ التواصل
+                      </a>
+                    </Button>
+                  </div>
                 </div>
-              </div>
-            </SheetContent>
-          </Sheet>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>
