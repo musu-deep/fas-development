@@ -32,33 +32,32 @@ html.light {
   --secondary-foreground: 154 47% 14%;
   --muted: 43 25% 92%;
   --muted-foreground: 154 14% 38%;
-  --accent: 42 75% 49%;
+  --accent: 150 48% 88%;
   --accent-foreground: 154 50% 13%;
-  --destructive: 0 68% 34%;
+  --destructive: 154 52% 25%;
   --destructive-foreground: 0 0% 100%;
   --border: 145 20% 82%;
   --input: 45 30% 95%;
   --ring: 150 100% 21%;
   --chart-1: 150 100% 21%;
-  --chart-2: 150 54% 35%;
-  --chart-3: 42 75% 49%;
-  --chart-4: 0 68% 34%;
-  --chart-5: 160 30% 52%;
+  --chart-2: 150 66% 29%;
+  --chart-3: 150 50% 39%;
+  --chart-4: 150 35% 52%;
+  --chart-5: 145 25% 68%;
 }
 
 html.light body {
   background-color: #f7f5ee;
   background-image:
-    radial-gradient(circle at 84% 8%, rgba(0, 108, 53, 0.12), transparent 30%),
-    radial-gradient(circle at 12% 38%, rgba(185, 138, 43, 0.055), transparent 23%),
-    radial-gradient(circle at 92% 76%, rgba(142, 27, 27, 0.025), transparent 17%),
-    linear-gradient(180deg, #fffef9 0%, #f7f5ee 46%, #f1f5ef 100%);
+    radial-gradient(circle at 84% 8%, rgba(0, 108, 53, 0.11), transparent 30%),
+    radial-gradient(circle at 12% 38%, rgba(0, 108, 53, 0.045), transparent 24%),
+    linear-gradient(180deg, #fffef9 0%, #f7f5ee 48%, #f1f5ef 100%);
   background-attachment: fixed;
 }
 
 html.light ::selection {
   color: #ffffff;
-  background: rgba(0, 108, 53, 0.78);
+  background: rgba(0, 108, 53, 0.8);
 }
 
 html.light ::-webkit-scrollbar-track {
@@ -66,25 +65,36 @@ html.light ::-webkit-scrollbar-track {
 }
 
 html.light ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #0b8245, #006c35);
+  background: #006c35;
 }
 
 html.light ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #0d9150, #005b2c);
+  background: #005b2c;
 }
 
-html.light .gradient-brand {
-  background: linear-gradient(135deg, #004b27 0%, #006c35 68%, #b98a2b 100%);
-}
-
+/* Solid luxury actions in day mode. */
+html.light .gradient-brand,
 html.light .gradient-gold {
-  background: linear-gradient(135deg, #9a6f1c 0%, #c79a3b 55%, #ead6a0 100%);
+  background-color: #006c35;
+  background-image: none;
+  border: 1px solid rgba(0, 75, 39, 0.5);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 12px 28px rgba(0, 82, 42, 0.18);
+}
+
+html.light .gradient-brand:hover,
+html.light .gradient-gold:hover {
+  background-color: #005b2c;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    0 16px 34px rgba(0, 82, 42, 0.22);
 }
 
 html.light .gradient-brand-soft {
   background:
-    linear-gradient(135deg, rgba(0, 108, 53, 0.11), rgba(185, 138, 43, 0.035)),
-    rgba(255, 254, 249, 0.82);
+    linear-gradient(145deg, rgba(255, 255, 255, 0.84), rgba(247, 245, 238, 0.78)),
+    rgba(0, 108, 53, 0.055);
 }
 
 html.light .gradient-dark {
@@ -93,27 +103,28 @@ html.light .gradient-dark {
 
 html.light .gradient-radial {
   background:
-    radial-gradient(circle at 72% 42%, rgba(0, 108, 53, 0.13), transparent 29%),
-    radial-gradient(circle at 27% 62%, rgba(185, 138, 43, 0.045), transparent 30%),
-    radial-gradient(circle at 87% 82%, rgba(142, 27, 27, 0.018), transparent 18%),
+    radial-gradient(circle at 72% 42%, rgba(0, 108, 53, 0.12), transparent 29%),
+    radial-gradient(circle at 27% 62%, rgba(0, 108, 53, 0.035), transparent 31%),
     linear-gradient(180deg, #fffef9 0%, #f7f5ee 54%, #eef4ef 100%);
 }
 
+/* Headings use one solid Saudi green rather than color gradients. */
 html.light .text-gradient {
-  background: linear-gradient(135deg, #004b27 0%, #006c35 70%, #a77a22 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background: none;
+  color: #006c35;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: currentColor;
+  background-clip: border-box;
 }
 
 html.light .glow {
   box-shadow:
     0 24px 70px rgba(0, 65, 34, 0.1),
-    0 0 45px rgba(0, 108, 53, 0.08);
+    0 0 45px rgba(0, 108, 53, 0.075);
 }
 
 html.light .glow-text {
-  text-shadow: 0 0 28px rgba(0, 108, 53, 0.13);
+  text-shadow: 0 0 24px rgba(0, 108, 53, 0.11);
 }
 
 html.light .logo-glow {
@@ -121,31 +132,30 @@ html.light .logo-glow {
     hue-rotate(245deg)
     saturate(0.82)
     brightness(0.88)
-    drop-shadow(0 0 20px rgba(0, 108, 53, 0.18));
+    drop-shadow(0 0 20px rgba(0, 108, 53, 0.17));
 }
 
 html.light .glass-panel {
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(247, 245, 238, 0.72)),
-    rgba(255, 254, 249, 0.84);
+    linear-gradient(145deg, rgba(255, 255, 255, 0.91), rgba(247, 245, 238, 0.76)),
+    rgba(255, 254, 249, 0.88);
   border-color: rgba(0, 108, 53, 0.14);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.95),
-    0 20px 54px rgba(0, 67, 34, 0.09),
-    0 1px 0 rgba(185, 138, 43, 0.08);
+    inset 0 1px 0 rgba(255, 255, 255, 0.96),
+    0 20px 54px rgba(0, 67, 34, 0.085);
 }
 
 html.light .brand-ring {
   box-shadow:
     0 0 0 1px rgba(0, 108, 53, 0.17),
-    0 0 52px rgba(0, 108, 53, 0.11),
-    0 12px 38px rgba(185, 138, 43, 0.055);
+    0 0 52px rgba(0, 108, 53, 0.1),
+    0 12px 38px rgba(0, 67, 34, 0.06);
 }
 
 html.light .grid-pattern {
   background-image:
-    linear-gradient(rgba(0, 108, 53, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 108, 53, 0.045) 1px, transparent 1px);
+    linear-gradient(rgba(0, 108, 53, 0.042) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 108, 53, 0.042) 1px, transparent 1px);
 }
 
 @keyframes pulse-glow-light {
@@ -156,8 +166,8 @@ html.light .grid-pattern {
 
   50% {
     box-shadow:
-      0 0 42px rgba(0, 108, 53, 0.25),
-      0 0 12px rgba(185, 138, 43, 0.08);
+      0 0 42px rgba(0, 108, 53, 0.24),
+      0 0 12px rgba(0, 108, 53, 0.07);
   }
 }
 
@@ -166,18 +176,18 @@ html.light .animate-pulse-glow {
 }
 
 html.light .line-decoration::after {
-  background: linear-gradient(90deg, #006c35 0%, rgba(185, 138, 43, 0.38) 55%, transparent 100%);
+  background: linear-gradient(90deg, #006c35 0%, rgba(0, 108, 53, 0.34) 58%, transparent 100%);
 }
 
 html.light[dir="rtl"] .line-decoration::after {
-  background: linear-gradient(270deg, #006c35 0%, rgba(185, 138, 43, 0.38) 55%, transparent 100%);
+  background: linear-gradient(270deg, #006c35 0%, rgba(0, 108, 53, 0.34) 58%, transparent 100%);
 }
 
 html.light .card-hover:hover {
   border-color: rgba(0, 108, 53, 0.3);
   box-shadow:
     0 22px 52px rgba(0, 67, 34, 0.12),
-    0 0 40px rgba(0, 108, 53, 0.07);
+    0 0 40px rgba(0, 108, 53, 0.065);
 }
 
 html.light .border-gradient {
@@ -187,9 +197,9 @@ html.light .border-gradient {
 html.light .border-gradient::before {
   background: linear-gradient(
     135deg,
-    rgba(0, 108, 53, 0.52) 0%,
-    rgba(0, 108, 53, 0.06) 52%,
-    rgba(185, 138, 43, 0.26) 100%
+    rgba(0, 108, 53, 0.48) 0%,
+    rgba(0, 108, 53, 0.08) 52%,
+    rgba(0, 108, 53, 0.2) 100%
   );
 }
 
@@ -197,29 +207,30 @@ html.light .section-divider {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(0, 108, 53, 0.24) 44%,
-    rgba(185, 138, 43, 0.16) 50%,
-    rgba(0, 108, 53, 0.24) 56%,
+    rgba(0, 108, 53, 0.22) 42%,
+    rgba(0, 108, 53, 0.34) 50%,
+    rgba(0, 108, 53, 0.22) 58%,
     transparent 100%
   );
 }
 
-/* Replace the violet ambient glows and service gradients in day mode. */
+/* Replace violet ambient accents with a unified Saudi green. */
 html.light .bg-violet-700\/10,
 html.light .bg-fuchsia-700\/10 {
-  background-color: rgb(0 108 53 / 0.075);
+  background-color: rgb(0 108 53 / 0.07);
 }
 
 html.light .bg-violet-300\/70 {
-  background-color: rgb(185 138 43 / 0.55);
+  background-color: rgb(0 108 53 / 0.5);
 }
 
+/* Service icon fields become solid green rather than gradients. */
 html.light [class*="from-violet-"],
 html.light [class*="from-purple-"],
 html.light [class*="from-indigo-"],
 html.light [class*="from-fuchsia-"] {
   --tw-gradient-from: #006c35 var(--tw-gradient-from-position) !important;
-  --tw-gradient-to: rgb(0 108 53 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-to: #006c35 var(--tw-gradient-to-position) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
@@ -227,7 +238,7 @@ html.light [class*="to-violet-"],
 html.light [class*="to-purple-"],
 html.light [class*="to-indigo-"],
 html.light [class*="to-fuchsia-"] {
-  --tw-gradient-to: #004b27 var(--tw-gradient-to-position) !important;
+  --tw-gradient-to: #006c35 var(--tw-gradient-to-position) !important;
 }
 
 html.light header {
@@ -235,7 +246,7 @@ html.light header {
 }
 
 html.light .noise-overlay::before {
-  opacity: 0.32;
+  opacity: 0.3;
 }
 
 @media (prefers-reduced-motion: reduce) {
