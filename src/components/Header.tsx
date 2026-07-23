@@ -114,10 +114,6 @@ export default function Header() {
                   </nav>
 
                   <div className="mt-auto space-y-4 border-t border-primary/15 pt-6">
-                    <div className="flex items-center justify-between rounded-2xl border border-primary/10 bg-primary/5 px-4 py-3">
-                      <span className="text-sm font-semibold text-foreground/80">مظهر الموقع</span>
-                      <ThemeToggle />
-                    </div>
                     <a
                       href="mailto:info@fasdev.org"
                       className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
