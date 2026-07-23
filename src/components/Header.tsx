@@ -12,6 +12,7 @@ const navItems = [
   { name: "من نحن", href: "#about" },
   { name: "خدماتنا", href: "#services" },
   { name: "ورش العمل", href: "#workshops" },
+  { name: "شركاؤنا", href: "#partners" },
   { name: "الرؤية", href: "#vision" },
   { name: "تواصل معنا", href: "#contact" },
 ];
@@ -56,7 +57,7 @@ export default function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="rounded-xl px-3.5 py-2.5 text-sm font-medium text-foreground/75 transition-all hover:bg-primary/10 hover:text-primary"
+                className="rounded-xl px-3 py-2.5 text-sm font-medium text-foreground/75 transition-all hover:bg-primary/10 hover:text-primary"
               >
                 {item.name}
               </a>
