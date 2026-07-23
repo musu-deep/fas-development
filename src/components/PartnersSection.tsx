@@ -1,102 +1,81 @@
 import {
+  Building2,
   Cpu,
+  Factory,
   GraduationCap,
   Handshake,
   Landmark,
   Network,
   ShieldCheck,
-  Target,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import styles from "./PartnersSection.module.css";
 
-const collaborationNetwork = [
+const partnershipDomains = [
   {
-    mark: "JAIN",
-    name: "JAIN University",
-    description: "تعليم دولي وتعاون أكاديمي",
-  },
-  {
-    mark: "LECIM",
-    name: "رابطة المدارس الإسلامية والنموذجية",
-    description: "تطوير التعليم وبناء القدرات",
-  },
-  {
-    mark: "SHUMOOS",
-    name: "شموس الريادة التعليمية",
-    description: "تعليم نوعي ومهارات المستقبل",
-  },
-  {
-    mark: "AFAQ",
-    name: "AFAQ International",
-    description: "برامج تعليمية وعلاقات دولية",
-  },
-  {
-    mark: "AN-NOUR",
-    name: "Groupe Scolaire An-Nour",
-    description: "تطوير المدارس والبرامج التعليمية",
-  },
-];
-
-const strategicPartnershipTargets = [
-  {
-    mark: "SDAIA",
-    name: "الهيئة السعودية للبيانات والذكاء الاصطناعي",
-    description: "البيانات والذكاء الاصطناعي والابتكار المؤسسي",
-    icon: Cpu,
-  },
-  {
-    mark: "MONSHA'AT",
-    name: "الهيئة العامة للمنشآت الصغيرة والمتوسطة",
-    description: "تمكين المنشآت وريادة الأعمال والنمو",
-    icon: Target,
-  },
-  {
-    mark: "SDB",
-    name: "بنك التنمية الاجتماعية",
-    description: "التمويل التنموي واستدامة المشروعات",
-    icon: Landmark,
-  },
-  {
-    mark: "DGA",
-    name: "هيئة الحكومة الرقمية",
-    description: "التحول الرقمي والتميز المؤسسي",
-    icon: Network,
-  },
-  {
-    mark: "MICROSOFT",
-    name: "Microsoft",
-    description: "الحوسبة السحابية والحلول المؤسسية",
-    icon: Cpu,
-  },
-  {
-    mark: "UNDP",
-    name: "برنامج الأمم المتحدة الإنمائي",
-    description: "التنمية المستدامة وبناء القدرات",
     icon: GraduationCap,
+    title: "مؤسسات القطاع التعليمي والأكاديمي",
+    partnership:
+      "برامج أكاديمية وتدريب نوعي وتطوير مناهج وبحوث تطبيقية وتبادل للخبرات.",
+    beneficiaries: "الجامعات والمدارس والمعاهد والمراكز البحثية والطلاب.",
+  },
+  {
+    icon: Building2,
+    title: "قطاع الشركات التجارية",
+    partnership:
+      "تطوير الأعمال والدراسات وتحسين التشغيل وبناء القدرات وفتح فرص النمو والأسواق.",
+    beneficiaries: "الشركات الكبرى والمتوسطة ومجموعات الأعمال ورواد المشاريع.",
+  },
+  {
+    icon: Cpu,
+    title: "قطاع التكنولوجيا والذكاء الاصطناعي",
+    partnership:
+      "حلول رقمية وأتمتة وتحليل بيانات وتطبيقات ذكاء اصطناعي ونقل للمعرفة التقنية.",
+    beneficiaries: "الجهات الراغبة في التحول الرقمي ورفع كفاءتها التشغيلية.",
+  },
+  {
+    icon: Factory,
+    title: "القطاع الصناعي",
+    partnership:
+      "تطوير سلاسل القيمة والجودة والاستدامة وتحسين الإنتاج وبناء الشراكات الصناعية.",
+    beneficiaries: "المصانع والمجمعات الصناعية والموردون وشركات الخدمات الهندسية.",
+  },
+  {
+    icon: Handshake,
+    title: "القطاع غير الربحي",
+    partnership:
+      "بناء الاستراتيجيات والحوكمة وتنمية الموارد وقياس الأثر والتحول المؤسسي.",
+    beneficiaries: "الجمعيات والمؤسسات الأهلية والأوقاف والمبادرات المجتمعية.",
+  },
+  {
+    icon: Landmark,
+    title: "القطاع الحكومي والتنموي",
+    partnership:
+      "تصميم المبادرات والدراسات الاستشارية وتمكين القطاعات وتنفيذ البرامج ذات الأثر.",
+    beneficiaries: "الجهات الحكومية والبرامج الوطنية وصناديق التنمية والجهات المانحة.",
   },
 ];
 
 const partnershipValues = [
   {
     icon: Handshake,
-    title: "علاقات ممتدة",
-    description: "نبني التعاون على وضوح الأدوار وتكامل المصالح.",
+    title: "تكامل الخبرات",
+    description: "نجمع المعرفة القطاعية والقدرات التنفيذية لبناء حلول مشتركة ذات قيمة.",
   },
   {
     icon: Network,
-    title: "شبكة متعددة القطاعات",
-    description: "نربط الخبرات المحلية والدولية لصناعة فرص أكبر.",
+    title: "نماذج تعاون مرنة",
+    description: "نصمم لكل شراكة إطارًا يناسب أهدافها وطبيعة المستفيدين منها.",
   },
   {
     icon: ShieldCheck,
-    title: "حوكمة وثقة",
-    description: "نعمل ضمن مسارات مهنية قابلة للقياس والمتابعة.",
+    title: "حوكمة واضحة",
+    description: "نعتمد وضوح الأدوار والمخرجات ومؤشرات الأداء منذ بداية التعاون.",
   },
 ];
 
 export default function PartnersSection() {
-  const marqueePartners = [...collaborationNetwork, ...collaborationNetwork];
+  const marqueeDomains = [...partnershipDomains, ...partnershipDomains];
 
   return (
     <section id="partners" className="relative overflow-hidden py-20 lg:py-28">
@@ -110,104 +89,75 @@ export default function PartnersSection() {
             variant="outline"
             className="mb-4 border-primary/30 bg-primary/5 text-primary"
           >
-            منظومة التعاون والشراكات
+            مجالات العمل والشراكة
           </Badge>
           <h2 className="mb-5 text-3xl font-black md:text-4xl lg:text-5xl">
             <span className="text-foreground">نبني القيمة عبر </span>
-            <span className="text-gradient">شراكات نوعية</span>
+            <span className="text-gradient">تكامل القطاعات</span>
           </h2>
           <p className="mx-auto max-w-3xl text-lg leading-8 text-muted-foreground">
-            نطوّر شبكة تعاون تجمع التعليم والتنمية والتقنية والتمويل، ونحدد
-            أولويات شراكة استراتيجية تدعم توسع فرح التنمية ورفع قدرتها التنافسية.
+            نطوّر أطر تعاون مهنية مع مختلف القطاعات، تبدأ من فهم الاحتياج وتنتهي
+            بمخرجات قابلة للقياس تخدم الجهة الشريكة والمستفيد النهائي.
           </p>
         </div>
 
         <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
           <div>
-            <p className="text-sm font-semibold text-primary">شبكة التعاون الحالية</p>
+            <p className="text-sm font-semibold text-primary">نطاقات التعاون</p>
             <h3 className="mt-1 text-2xl font-black text-foreground">
-              علاقات تعليمية وتنموية ممتدة
+              شراكات مصممة بحسب طبيعة كل قطاع
             </h3>
           </div>
           <Badge variant="secondary" className="rounded-full px-4 py-2">
-            تعاون قائم ومتنامٍ
+            فرص تكامل متعددة القطاعات
           </Badge>
         </div>
 
         <div className={`${styles.viewport} relative overflow-hidden py-5`} dir="ltr">
           <div className={`${styles.track} flex w-max gap-5`}>
-            {marqueePartners.map((partner, index) => (
+            {marqueeDomains.map((domain, index) => (
               <article
-                key={`${partner.mark}-${index}`}
-                className="glass-panel group flex min-h-[184px] w-[285px] shrink-0 flex-col items-center justify-center rounded-3xl px-6 py-7 text-center transition duration-300 hover:-translate-y-2 hover:border-primary/40"
-              >
-                <div className="relative mb-5 flex h-16 min-w-[150px] items-center justify-center overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-white/[0.04] to-violet-900/10 px-5 shadow-inner">
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/[0.08] to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-                  <span className="relative text-lg font-black tracking-[0.16em] text-foreground transition-colors group-hover:text-primary">
-                    {partner.mark}
-                  </span>
-                </div>
-                <h4 className="mb-2 text-base font-bold text-foreground" dir="auto">
-                  {partner.name}
-                </h4>
-                <p className="text-xs leading-6 text-muted-foreground" dir="auto">
-                  {partner.description}
-                </p>
-              </article>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-16 rounded-[2rem] border border-primary/15 bg-card/35 p-6 backdrop-blur-md md:p-8">
-          <div className="mb-7 flex flex-wrap items-end justify-between gap-4">
-            <div>
-              <div className="mb-2 flex items-center gap-2 text-primary">
-                <Target className="h-5 w-5" />
-                <span className="text-sm font-bold">أولويات الشراكة الاستراتيجية</span>
-              </div>
-              <h3 className="text-2xl font-black text-foreground md:text-3xl">
-                جهات نوعية نطمح لبناء تعاون مؤثر معها
-              </h3>
-            </div>
-            <Badge
-              variant="outline"
-              className="rounded-full border-primary/25 bg-primary/5 px-4 py-2 text-primary"
-            >
-              شراكات مستهدفة
-            </Badge>
-          </div>
-
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {strategicPartnershipTargets.map((partner) => (
-              <article
-                key={partner.mark}
-                className="group rounded-3xl border border-primary/12 bg-background/45 p-5 transition duration-300 hover:-translate-y-1 hover:border-primary/35 hover:bg-primary/[0.04]"
+                key={`${domain.title}-${index}`}
+                className="glass-panel group flex min-h-[310px] w-[330px] shrink-0 flex-col rounded-3xl px-6 py-7 text-right transition duration-300 hover:-translate-y-2 hover:border-primary/40"
+                dir="rtl"
               >
                 <div className="mb-5 flex items-center justify-between gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-                    <partner.icon className="h-6 w-6" />
+                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-primary/20 bg-primary/10 text-primary shadow-inner">
+                    <domain.icon className="h-7 w-7" />
                   </div>
-                  <span className="text-sm font-black tracking-[0.12em] text-primary" dir="ltr">
-                    {partner.mark}
+                  <span className="rounded-full border border-primary/15 bg-primary/[0.05] px-3 py-1.5 text-xs font-bold text-primary">
+                    مجال شراكة
                   </span>
                 </div>
-                <h4 className="mb-2 text-base font-bold text-foreground">
-                  {partner.name}
+
+                <h4 className="mb-5 min-h-[56px] text-xl font-black leading-8 text-foreground transition-colors group-hover:text-primary">
+                  {domain.title}
                 </h4>
-                <p className="text-sm leading-7 text-muted-foreground">
-                  {partner.description}
-                </p>
+
+                <div className="mb-4">
+                  <p className="mb-1 text-xs font-bold text-primary">نوع الشراكة</p>
+                  <p className="text-sm leading-7 text-muted-foreground">
+                    {domain.partnership}
+                  </p>
+                </div>
+
+                <div className="mt-auto border-t border-primary/10 pt-4">
+                  <p className="mb-1 text-xs font-bold text-primary">الجهات المستفيدة</p>
+                  <p className="text-sm leading-7 text-muted-foreground">
+                    {domain.beneficiaries}
+                  </p>
+                </div>
               </article>
             ))}
           </div>
-
-          <p className="mt-6 rounded-2xl border border-primary/10 bg-primary/[0.04] px-5 py-4 text-xs leading-6 text-muted-foreground">
-            تمثل هذه الجهات أولويات مقترحة لبناء العلاقات والتعاون، ولا تعني وجود
-            اتفاقيات أو شراكات نافذة ما لم يُعلن عنها رسميًا.
-          </p>
         </div>
 
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <p className="mx-auto mt-5 max-w-4xl text-center text-sm leading-7 text-muted-foreground">
+          تمثل هذه البطاقات مجالات ونماذج تعاون تقدمها فرح التنمية، ولا تشير إلى
+          شراكات أو اتفاقيات مع جهات بعينها.
+        </p>
+
+        <div className="mt-12 grid gap-5 md:grid-cols-3">
           {partnershipValues.map((item) => (
             <div
               key={item.title}
