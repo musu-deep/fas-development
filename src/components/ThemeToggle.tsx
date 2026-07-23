@@ -34,6 +34,7 @@ export default function ThemeToggle() {
       ? "light"
       : "dark";
     setTheme(activeTheme);
+    applyTheme(activeTheme);
   }, []);
 
   const toggleTheme = () => {
