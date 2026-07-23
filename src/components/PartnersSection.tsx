@@ -1,6 +1,6 @@
 import { Handshake, Network, ShieldCheck } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import "./PartnersSection.module.css";
+import styles from "./PartnersSection.module.css";
 
 const partners = [
   {
@@ -80,8 +80,8 @@ export default function PartnersSection() {
           </p>
         </div>
 
-        <div className="partner-marquee-viewport relative overflow-hidden py-5" dir="ltr">
-          <div className="partner-marquee-track flex w-max gap-5">
+        <div className={`${styles.viewport} relative overflow-hidden py-5`} dir="ltr">
+          <div className={`${styles.track} flex w-max gap-5`}>
             {marqueePartners.map((partner, index) => (
               <article
                 key={`${partner.mark}-${index}`}
@@ -108,7 +108,7 @@ export default function PartnersSection() {
           {partnershipValues.map((item) => (
             <div
               key={item.title}
-              className="rounded-3xl border border-primary/10 bg-card/45 p-6 backdrop-blur-md"
+              className="rounded-3xl border border-primary/10 bg-card/40 p-6 backdrop-blur-md"
             >
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
                 <item.icon className="h-6 w-6" />
