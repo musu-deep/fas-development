@@ -20,7 +20,7 @@ function applyTheme(theme: Theme) {
   );
   themeColor?.setAttribute(
     "content",
-    theme === "light" ? "#f7f5ee" : "#0b0a18",
+    theme === "light" ? "#f8f5ff" : "#0b0a18",
   );
 }
 
