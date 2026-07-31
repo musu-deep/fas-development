@@ -1,76 +1,76 @@
 import {
   Building2,
   Cpu,
-  Factory,
   GraduationCap,
   Handshake,
   Landmark,
   Network,
   ShieldCheck,
+  TrendingUp,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import styles from "./PartnersSection.module.css";
 
 const partnershipDomains = [
   {
-    icon: GraduationCap,
-    title: "مؤسسات القطاع التعليمي والأكاديمي",
+    icon: Landmark,
+    title: "الجهات الحكومية والتنموية",
     partnership:
-      "برامج أكاديمية وتدريب نوعي وتطوير مناهج وبحوث تطبيقية وتبادل للخبرات.",
-    beneficiaries: "الجامعات والمدارس والمعاهد والمراكز البحثية والطلاب.",
+      "تصميم المبادرات والمشاريع التنموية، وإعداد الدراسات، وبناء نماذج التنفيذ والشراكة وقياس الأثر.",
+    beneficiaries: "الجهات الحكومية والبرامج الوطنية وصناديق التنمية والجهات المانحة.",
   },
   {
-    icon: Building2,
-    title: "قطاع الشركات التجارية",
+    icon: TrendingUp,
+    title: "القطاع الاستثماري وصناديق التمويل",
     partnership:
-      "تطوير الأعمال والدراسات وتحسين التشغيل وبناء القدرات وفتح فرص النمو والأسواق.",
-    beneficiaries: "الشركات الكبرى والمتوسطة ومجموعات الأعمال ورواد المشاريع.",
-  },
-  {
-    icon: Cpu,
-    title: "قطاع التكنولوجيا والذكاء الاصطناعي",
-    partnership:
-      "حلول رقمية وأتمتة وتحليل بيانات وتطبيقات ذكاء اصطناعي ونقل للمعرفة التقنية.",
-    beneficiaries: "الجهات الراغبة في التحول الرقمي ورفع كفاءتها التشغيلية.",
-  },
-  {
-    icon: Factory,
-    title: "القطاع الصناعي",
-    partnership:
-      "تطوير سلاسل القيمة والجودة والاستدامة وتحسين الإنتاج وبناء الشراكات الصناعية.",
-    beneficiaries: "المصانع والمجمعات الصناعية والموردون وشركات الخدمات الهندسية.",
+      "تطوير الفرص، وتحليل الجدوى، وبناء النماذج الاستثمارية، وتجهيز المشاريع للاستثمار والتوسع.",
+    beneficiaries: "المستثمرون والصناديق وشركات الاستثمار العائلي ومنصات التمويل.",
   },
   {
     icon: Handshake,
-    title: "القطاع غير الربحي",
+    title: "القطاع غير الربحي والأوقاف",
     partnership:
-      "بناء الاستراتيجيات والحوكمة وتنمية الموارد وقياس الأثر والتحول المؤسسي.",
+      "تطوير المشاريع ذات الأثر، وتنمية الموارد، وتصميم الشراكات، وبناء نماذج الاستدامة والحوكمة.",
     beneficiaries: "الجمعيات والمؤسسات الأهلية والأوقاف والمبادرات المجتمعية.",
   },
   {
-    icon: Landmark,
-    title: "القطاع الحكومي والتنموي",
+    icon: Building2,
+    title: "الشركات والمطورون وأصحاب المشاريع",
     partnership:
-      "تصميم المبادرات والدراسات الاستشارية وتمكين القطاعات وتنفيذ البرامج ذات الأثر.",
-    beneficiaries: "الجهات الحكومية والبرامج الوطنية وصناديق التنمية والجهات المانحة.",
+      "تطوير نماذج الأعمال، وبناء المحافظ والمشاريع الجديدة، وتحسين التشغيل وفتح مسارات النمو والشراكة.",
+    beneficiaries: "الشركات الكبرى والمتوسطة ورواد الأعمال ومطورو المشاريع.",
+  },
+  {
+    icon: Cpu,
+    title: "شركاء التقنية والذكاء الاصطناعي",
+    partnership:
+      "بناء حلول رقمية وأتمتة العمليات وتحليل البيانات وتطوير المنصات الداعمة للمشاريع والاستثمار.",
+    beneficiaries: "الجهات الراغبة في رفع كفاءة مشاريعها وتشغيلها واتخاذ القرار.",
+  },
+  {
+    icon: GraduationCap,
+    title: "الجامعات ومراكز الخبرة",
+    partnership:
+      "دراسات وبحوث تطبيقية، وتطوير قدرات فرق المشاريع، ونقل المعرفة، وبناء برامج نوعية مشتركة.",
+    beneficiaries: "الجامعات ومراكز البحوث وبيوت الخبرة والمعاهد المهنية.",
   },
 ];
 
 const partnershipValues = [
   {
     icon: Handshake,
-    title: "تكامل الخبرات",
-    description: "نجمع المعرفة القطاعية والقدرات التنفيذية لبناء حلول مشتركة ذات قيمة.",
+    title: "قيمة مشتركة",
+    description: "نصمم الشراكة حول نتائج واضحة ومنافع متوازنة لجميع الأطراف.",
   },
   {
     icon: Network,
-    title: "نماذج تعاون مرنة",
-    description: "نصمم لكل شراكة إطارًا يناسب أهدافها وطبيعة المستفيدين منها.",
+    title: "تكامل الموارد والخبرات",
+    description: "نربط التمويل والخبرة والوصول والتنفيذ في نموذج تعاون واحد.",
   },
   {
     icon: ShieldCheck,
-    title: "حوكمة واضحة",
-    description: "نعتمد وضوح الأدوار والمخرجات ومؤشرات الأداء منذ بداية التعاون.",
+    title: "حوكمة قابلة للتنفيذ",
+    description: "نحدد الأدوار والالتزامات ومؤشرات النجاح وآلية اتخاذ القرار منذ البداية.",
   },
 ];
 
@@ -89,27 +89,27 @@ export default function PartnersSection() {
             variant="outline"
             className="mb-4 border-primary/30 bg-primary/5 text-primary"
           >
-            مجالات العمل والشراكة
+            منظومة الشراكات
           </Badge>
           <h2 className="mb-5 text-3xl font-black md:text-4xl lg:text-5xl">
-            <span className="text-foreground">نبني القيمة عبر </span>
-            <span className="text-gradient">تكامل القطاعات</span>
+            <span className="text-foreground">نجمع الأطراف حول </span>
+            <span className="text-gradient">فرصة ومشروع وقيمة مشتركة</span>
           </h2>
           <p className="mx-auto max-w-3xl text-lg leading-8 text-muted-foreground">
-            نطوّر أطر تعاون مهنية مع مختلف القطاعات، تبدأ من فهم الاحتياج وتنتهي
-            بمخرجات قابلة للقياس تخدم الجهة الشريكة والمستفيد النهائي.
+            نبني الشراكات بين الجهات التنموية والمستثمرين والمطورين ومقدمي الخبرة،
+            ونحوّل التكامل بينهم إلى مشاريع واضحة المساهمة والحوكمة والنتائج.
           </p>
         </div>
 
         <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
           <div>
-            <p className="text-sm font-semibold text-primary">نطاقات التعاون</p>
+            <p className="text-sm font-semibold text-primary">أطراف منظومة العمل</p>
             <h3 className="mt-1 text-2xl font-black text-foreground">
-              شراكات مصممة بحسب طبيعة كل قطاع
+              شراكات مصممة بحسب طبيعة كل مشروع
             </h3>
           </div>
           <Badge variant="secondary" className="rounded-full px-4 py-2">
-            فرص تكامل متعددة القطاعات
+            تنمية × استثمار × خبرة × تنفيذ
           </Badge>
         </div>
 
@@ -126,7 +126,7 @@ export default function PartnersSection() {
                     <domain.icon className="h-7 w-7" />
                   </div>
                   <span className="rounded-full border border-primary/15 bg-primary/[0.05] px-3 py-1.5 text-xs font-bold text-primary">
-                    مجال شراكة
+                    شريك محتمل
                   </span>
                 </div>
 
@@ -135,7 +135,7 @@ export default function PartnersSection() {
                 </h4>
 
                 <div className="mb-4">
-                  <p className="mb-1 text-xs font-bold text-primary">نوع الشراكة</p>
+                  <p className="mb-1 text-xs font-bold text-primary">مجال التكامل</p>
                   <p className="text-sm leading-7 text-muted-foreground">
                     {domain.partnership}
                   </p>
@@ -153,8 +153,8 @@ export default function PartnersSection() {
         </div>
 
         <p className="mx-auto mt-5 max-w-4xl text-center text-sm leading-7 text-muted-foreground">
-          تمثل هذه البطاقات مجالات ونماذج تعاون تقدمها فرح التنمية، ولا تشير إلى
-          شراكات أو اتفاقيات مع جهات بعينها.
+          تمثل هذه البطاقات نطاقات التعاون التي تعمل عليها فرح التنمية، ولا تشير إلى
+          اتفاقيات قائمة مع جهات بعينها ما لم يعلن عنها رسمياً.
         </p>
 
         <div className="mt-12 grid gap-5 md:grid-cols-3">
