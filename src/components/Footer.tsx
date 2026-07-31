@@ -6,17 +6,18 @@ import BrandLogo from "@/components/BrandLogo";
 
 const footerLinks = {
   services: [
-    { name: "التطوير المؤسسي والاستشارات", href: "#services" },
-    { name: "التقنية والذكاء الاصطناعي", href: "#services" },
-    { name: "التدريب وتطوير القيادات", href: "#services" },
-    { name: "المقاولات والتطوير العقاري", href: "#services" },
-    { name: "الخدمات الصحية واللوجستية", href: "#services" },
-    { name: "الاستثمار والفعاليات", href: "#services" },
+    { name: "تطوير المشاريع التنموية", href: "#services" },
+    { name: "تطوير الفرص الاستثمارية", href: "#services" },
+    { name: "الشراكات والتحالفات", href: "#partners" },
+    { name: "دراسات الجدوى ونماذج الأعمال", href: "#services" },
+    { name: "تأسيس وتشغيل المشاريع", href: "#services" },
+    { name: "إدارة المحافظ وبناء القدرات", href: "#services" },
   ],
   company: [
     { name: "من نحن", href: "#about" },
     { name: "رؤيتنا", href: "#vision" },
-    { name: "خدماتنا", href: "#services" },
+    { name: "مجالات العمل", href: "#services" },
+    { name: "البرامج والمختبرات", href: "#workshops" },
     { name: "تواصل معنا", href: "#contact" },
   ],
   channels: [
@@ -42,8 +43,8 @@ export default function Footer() {
             </Link>
 
             <p className="max-w-md leading-8 text-muted-foreground">
-              فرح التنمية شريك في تطوير الأعمال والمشروعات، يجمع بين الاستراتيجية
-              والتشغيل والتقنية لبناء حلول أكثر وضوحاً وكفاءة واستدامة.
+              فرح التنمية منصة لتطوير المشاريع والفرص الاستثمارية والشراكات،
+              تجمع بين الدراسة والتصميم والتأسيس والتشغيل لبناء قيمة وأثر مستدام.
             </p>
 
             <div className="space-y-3">
