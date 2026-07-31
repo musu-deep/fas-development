@@ -1,13 +1,13 @@
 "use client";
 
-import { ArrowLeft, Briefcase, Building2, Globe, Play, Sparkles } from "lucide-react";
+import { ArrowLeft, BarChart3, Building2, Handshake, Play, Sparkles } from "lucide-react";
 import BrandLogo from "@/components/BrandLogo";
 import { Button } from "@/components/ui/button";
 
 const orbitItems = [
-  { icon: Building2, label: "تطوير مؤسسي", position: "top-5 left-1/2 -translate-x-1/2" },
-  { icon: Globe, label: "شراكات دولية", position: "top-1/2 right-0 -translate-y-1/2" },
-  { icon: Briefcase, label: "حلول أعمال", position: "bottom-8 left-8" },
+  { icon: Building2, label: "مشاريع تنموية", position: "top-5 left-1/2 -translate-x-1/2" },
+  { icon: BarChart3, label: "فرص استثمارية", position: "top-1/2 right-0 -translate-y-1/2" },
+  { icon: Handshake, label: "شراكات استراتيجية", position: "bottom-8 left-8" },
 ];
 
 export default function HeroSection() {
@@ -34,14 +34,14 @@ export default function HeroSection() {
             </div>
 
             <h1 className="animate-slide-up text-4xl font-black leading-[1.25] opacity-0 stagger-1 md:text-5xl lg:text-6xl xl:text-7xl">
-              <span className="text-foreground">شريكك الاستراتيجي</span>
+              <span className="text-foreground">نطوّر الفرص ونبني</span>
               <br />
-              <span className="text-gradient glow-text">في بناء المستقبل</span>
+              <span className="text-gradient glow-text">المشاريع والشراكات</span>
             </h1>
 
             <p className="mx-auto max-w-2xl animate-slide-up text-lg leading-9 text-muted-foreground opacity-0 stagger-2 lg:mx-0 lg:text-xl">
-              نطوّر الأعمال والمشروعات من الفكرة إلى التشغيل، ونبني حلولاً مؤسسية
-              تجمع بين الاستراتيجية والتقنية والذكاء الاصطناعي والشراكات ذات الأثر.
+              نساعد الجهات التنموية والمستثمرين وأصحاب المشاريع على تحويل الأفكار
+              والاحتياجات إلى فرص واضحة، وشراكات فاعلة، ومشاريع قابلة للتنفيذ والنمو والاستدامة.
             </p>
 
             <div className="flex animate-slide-up flex-col justify-center gap-4 opacity-0 stagger-3 sm:flex-row lg:justify-start">
@@ -51,7 +51,7 @@ export default function HeroSection() {
                 className="gradient-brand px-8 py-6 text-base font-bold text-white shadow-xl shadow-primary/20 transition-all hover:scale-[1.02] hover:opacity-90"
               >
                 <a href="#services">
-                  استكشف خدماتنا
+                  استكشف مجالات العمل
                   <ArrowLeft className="mr-2 h-5 w-5" />
                 </a>
               </Button>
@@ -63,15 +63,15 @@ export default function HeroSection() {
               >
                 <a href="#about">
                   <Play className="ml-2 h-5 w-5" />
-                  تعرّف على فرح التنمية
+                  تعرّف على منهجنا
                 </a>
               </Button>
             </div>
 
             <div className="grid grid-cols-3 gap-4 border-t border-primary/15 pt-8 animate-slide-up opacity-0 stagger-4">
               {[
-                { value: "+50", label: "مشروعاً" },
-                { value: "8", label: "قطاعات" },
+                { value: "+50", label: "مشروعاً ومبادرة" },
+                { value: "+100", label: "شبكة شراكة وتعاون" },
                 { value: "+15", label: "عاماً من الخبرة" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center lg:text-right">
