@@ -11,9 +11,9 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 const navItems = [
   { name: "الرئيسية", href: "#home" },
   { name: "من نحن", href: "#about" },
-  { name: "خدماتنا", href: "#services" },
-  { name: "ورش العمل", href: "#workshops" },
-  { name: "شركاؤنا", href: "#partners" },
+  { name: "مجالات العمل", href: "#services" },
+  { name: "البرامج والمختبرات", href: "#workshops" },
+  { name: "الشراكات", href: "#partners" },
   { name: "الرؤية", href: "#vision" },
   { name: "تواصل معنا", href: "#contact" },
 ];
@@ -80,7 +80,7 @@ export default function Header() {
               asChild
               className="gradient-brand hidden px-5 font-semibold text-white shadow-lg shadow-primary/20 hover:opacity-90 xl:inline-flex"
             >
-              <a href="#contact">احجز استشارة</a>
+              <a href="#contact">ناقش مشروعك</a>
             </Button>
 
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
@@ -130,7 +130,7 @@ export default function Header() {
                     </a>
                     <Button asChild className="gradient-brand mt-4 w-full font-semibold text-white">
                       <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
-                        ابدأ التواصل
+                        ابدأ تطوير مشروعك
                       </a>
                     </Button>
                   </div>
