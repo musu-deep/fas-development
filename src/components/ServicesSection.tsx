@@ -2,14 +2,14 @@
 
 import {
   ArrowLeft,
+  BarChart3,
   Building2,
-  Car,
-  GraduationCap,
-  HeartPulse,
-  Laptop,
-  Plane,
-  Trophy,
-  Truck,
+  Cpu,
+  Handshake,
+  Layers3,
+  Lightbulb,
+  Network,
+  Rocket,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -17,66 +17,66 @@ import { Button } from "@/components/ui/button";
 const services = [
   {
     icon: Building2,
-    title: "المقاولات والتطوير العقاري",
+    title: "تطوير المشاريع التنموية",
     description:
-      "خدمات متكاملة في البناء والتشييد والتطوير العقاري وإدارة المشروعات، وفق معايير مهنية واضحة.",
-    features: ["تشييد المباني", "التطوير العقاري", "إدارة المشاريع"],
+      "نحوّل الاحتياجات والتحديات المجتمعية إلى مشاريع تنموية واضحة الأهداف، قابلة للتنفيذ والقياس والاستدامة.",
+    features: ["تصميم المشاريع", "نماذج الأثر", "خطط التنفيذ"],
     color: "from-violet-500 to-purple-700",
   },
   {
-    icon: Car,
-    title: "التجارة العامة والسيارات",
+    icon: BarChart3,
+    title: "تطوير الفرص الاستثمارية",
     description:
-      "حلول توريد وتجارة مرنة تربط الاحتياج بالفرصة وتدعم كفاءة سلاسل الإمداد والتوسع.",
-    features: ["استيراد السيارات", "التجارة العامة", "قطع الغيار"],
+      "نبني فرصاً استثمارية متماسكة عبر تحليل السوق، وصياغة القيمة، وتطوير النموذج المالي والاستثماري.",
+    features: ["تحليل الفرص", "النماذج المالية", "ملفات الاستثمار"],
     color: "from-purple-500 to-fuchsia-700",
   },
   {
-    icon: Laptop,
-    title: "التقنية والذكاء الاصطناعي",
+    icon: Handshake,
+    title: "الشراكات والتحالفات",
     description:
-      "تصميم حلول رقمية وأدوات ذكاء اصطناعي ومنصات تشغيل تعزز الأداء والوضوح وسرعة اتخاذ القرار.",
-    features: ["الحلول الرقمية", "الذكاء الاصطناعي", "تطوير المنصات"],
+      "نصمم شراكات استراتيجية تجمع أصحاب المصلحة حول أهداف مشتركة وأدوار واضحة ونموذج حوكمة قابل للتطبيق.",
+    features: ["تصميم الشراكات", "مواءمة المصالح", "حوكمة التعاون"],
     color: "from-indigo-500 to-violet-700",
   },
   {
-    icon: HeartPulse,
-    title: "الرعاية الصحية",
+    icon: Rocket,
+    title: "تأسيس وتشغيل المشاريع",
     description:
-      "تطوير فرص ومشروعات صحية ترتكز على الجودة، وتحسين التجربة، وبناء نماذج تشغيل مستدامة.",
-    features: ["المرافق الصحية", "الأجهزة الطبية", "الخدمات العلاجية"],
+      "نرافق المشروع من الفكرة إلى الإطلاق عبر بناء الهيكل التشغيلي، وخطة المراحل، ومؤشرات الأداء والمتابعة.",
+    features: ["خطة الإطلاق", "نموذج التشغيل", "إدارة التنفيذ"],
     color: "from-fuchsia-500 to-purple-700",
   },
   {
-    icon: GraduationCap,
-    title: "التدريب والتطوير",
+    icon: Lightbulb,
+    title: "دراسات الجدوى ونماذج الأعمال",
     description:
-      "برامج نوعية لتطوير القيادات والكوادر ورفع الجاهزية المؤسسية وتحويل المعرفة إلى ممارسة.",
-    features: ["التدريب المهني", "تطوير القيادات", "الاستشارات"],
+      "نختبر جدوى الفكرة ونصمم نموذج العمل والقيمة المقدمة ومصادر الإيراد والتكلفة ومسارات النمو.",
+    features: ["دراسة الجدوى", "نموذج الأعمال", "استراتيجية النمو"],
     color: "from-violet-400 to-indigo-600",
   },
   {
-    icon: Plane,
-    title: "السياحة والفعاليات",
+    icon: Layers3,
+    title: "إدارة المحافظ والمبادرات",
     description:
-      "تصميم تجارب وبرامج وتنظيم فعاليات ومؤتمرات تجمع بين جودة التنفيذ وقيمة المحتوى.",
-    features: ["البرامج السياحية", "تنظيم المؤتمرات", "إدارة التجارب"],
+      "نرتب المشاريع والمبادرات ضمن محافظ مترابطة، ونحدد الأولويات والاعتماديات ومؤشرات الإنجاز والأثر.",
+    features: ["تصميم المحافظ", "إدارة الأولويات", "متابعة الأثر"],
     color: "from-purple-400 to-violet-700",
   },
   {
-    icon: Truck,
-    title: "النقل واللوجستيات",
+    icon: Cpu,
+    title: "التحول المؤسسي والرقمي",
     description:
-      "حلول لوجستية متكاملة وخدمات نقل وتخزين وتنسيق تشغيلي تدعم استمرارية الأعمال.",
-    features: ["النقل البري", "الشحن", "التخزين"],
+      "نطوّر التشغيل ونوظف التقنية والذكاء الاصطناعي لبناء عمليات أكثر كفاءة وقرارات أسرع وتجربة أفضل.",
+    features: ["التحول الرقمي", "الذكاء الاصطناعي", "أتمتة العمليات"],
     color: "from-indigo-400 to-purple-600",
   },
   {
-    icon: Trophy,
-    title: "الاستثمار الرياضي",
+    icon: Network,
+    title: "بناء القدرات ونقل المعرفة",
     description:
-      "تطوير فرص ومشروعات رياضية وبنى تحتية وبرامج أكاديمية وفعاليات قابلة للنمو والاستدامة.",
-    features: ["تطوير الملاعب", "الأكاديميات الرياضية", "الفعاليات"],
+      "نرفع جاهزية القيادات وفرق المشاريع والاستثمار عبر برامج تطبيقية وأدلة عمل وأدوات قابلة للاستخدام.",
+    features: ["تطوير القيادات", "فرق المشاريع", "أدلة وأدوات العمل"],
     color: "from-violet-500 to-fuchsia-700",
   },
 ];
@@ -92,15 +92,15 @@ export default function ServicesSection() {
       <div className="container relative z-10 mx-auto px-6">
         <div className="mb-16 text-center">
           <Badge variant="outline" className="mb-4 border-primary/30 bg-primary/5 text-primary">
-            خدماتنا
+            مجالات عملنا
           </Badge>
           <h2 className="mb-6 text-3xl font-black md:text-4xl lg:text-5xl">
-            <span className="text-foreground">قطاعات </span>
-            <span className="text-gradient">متنوعة بمنهج واحد</span>
+            <span className="text-foreground">من الفكرة إلى </span>
+            <span className="text-gradient">مشروع قابل للنمو والأثر</span>
           </h2>
           <p className="mx-auto max-w-3xl text-lg leading-8 text-muted-foreground">
-            نربط الخبرات القطاعية بمنهج مؤسسي موحّد يساعد على تصميم الفرص، ورفع
-            كفاءة التنفيذ، وبناء مشروعات أكثر قدرة على الاستمرار والنمو.
+            نخدم الجهات التنموية والمستثمرين وأصحاب المشاريع عبر مسار متكامل يجمع
+            تطوير الفرصة، وبناء الشراكة، وتصميم المشروع، ثم التأسيس والتشغيل والمتابعة.
           </p>
         </div>
 
@@ -124,7 +124,7 @@ export default function ServicesSection() {
                   {service.title}
                 </h3>
 
-                <p className="min-h-[84px] text-sm leading-7 text-muted-foreground">
+                <p className="min-h-[108px] text-sm leading-7 text-muted-foreground">
                   {service.description}
                 </p>
 
@@ -153,7 +153,7 @@ export default function ServicesSection() {
             className="gradient-brand px-8 font-bold text-white shadow-lg shadow-primary/20 hover:opacity-90"
           >
             <a href="#contact">
-              ناقش احتياج مشروعك
+              ناقش مشروعك أو فرصتك الاستثمارية
               <ArrowLeft className="mr-2 h-5 w-5" />
             </a>
           </Button>
