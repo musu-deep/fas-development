@@ -8,23 +8,23 @@ import { Button } from "@/components/ui/button";
 const visionPoints = [
   {
     icon: Target,
-    title: "وضوح استراتيجي",
-    description: "تحويل الطموحات إلى أولويات ومسارات قابلة للتنفيذ والقياس.",
+    title: "مشاريع واضحة",
+    description: "تحويل الاحتياجات والطموحات إلى مشاريع ذات أهداف ونماذج تشغيل ومؤشرات قابلة للقياس.",
+  },
+  {
+    icon: TrendingUp,
+    title: "فرص استثمارية ناضجة",
+    description: "تطوير فرص تستند إلى السوق والجدوى والقيمة الاقتصادية ومسارات النمو.",
   },
   {
     icon: Globe,
     title: "شراكات ممتدة",
-    description: "بناء جسور تعاون محلية ودولية توسّع الفرص وتسرّع النمو.",
-  },
-  {
-    icon: TrendingUp,
-    title: "نمو مستدام",
-    description: "تصميم نماذج تشغيل واستثمار تدعم الاستمرارية وصناعة الأثر.",
+    description: "ربط الجهات والمستثمرين والخبرات المحلية والدولية حول مشاريع وقيمة مشتركة.",
   },
   {
     icon: Rocket,
-    title: "ابتكار عملي",
-    description: "توظيف التقنية والذكاء الاصطناعي في حلول قابلة للاستخدام الفعلي.",
+    title: "تنفيذ ونمو مستدام",
+    description: "مرافقة المشروع من التأسيس إلى التشغيل والتوسع وقياس الأثر والنتائج.",
   },
 ];
 
@@ -53,17 +53,17 @@ export default function VisionSection() {
                       2026
                     </div>
                     <p className="mt-3 text-xl font-semibold text-foreground">
-                      مرحلة توسع وبناء أثر
+                      مرحلة بناء المشاريع والشراكات
                     </p>
                     <p className="mx-auto mt-3 max-w-md leading-7 text-muted-foreground">
-                      عام لتثبيت الهوية المؤسسية، وتطوير الحلول، وتوسيع شبكة
-                      الشراكات والمشروعات النوعية.
+                      عام لتطوير محفظة الفرص، وتوسيع شبكة المستثمرين والشركاء،
+                      وتحويل المشاريع النوعية إلى نماذج جاهزة للتنفيذ والنمو.
                     </p>
                   </div>
 
                   <div className="space-y-3 rounded-2xl border border-primary/15 bg-background/45 p-5 backdrop-blur-md">
                     <div className="flex items-center justify-between text-sm">
-                      <span className="text-muted-foreground">تقدم مسار التحول</span>
+                      <span className="text-muted-foreground">جاهزية منظومة المشاريع</span>
                       <span className="font-bold text-primary">75%</span>
                     </div>
                     <div className="h-2.5 overflow-hidden rounded-full bg-muted">
@@ -91,13 +91,13 @@ export default function VisionSection() {
                 رؤيتنا
               </Badge>
               <h2 className="mb-6 text-3xl font-black md:text-4xl lg:text-5xl">
-                <span className="text-foreground">نبني </span>
-                <span className="text-gradient">مستقبلاً أكثر وضوحاً</span>
+                <span className="text-foreground">منصة تجمع </span>
+                <span className="text-gradient">التنمية والاستثمار والشراكة</span>
               </h2>
               <p className="text-lg leading-9 text-muted-foreground">
-                تتطلع فرح التنمية إلى أن تكون منصة تطوير وشراكة موثوقة، تساعد
-                المؤسسات والمشروعات على الانتقال من الفكرة إلى نموذج عمل متماسك،
-                ومن التشغيل التقليدي إلى أداء أكثر مرونة وابتكاراً واستدامة.
+                تتطلع فرح التنمية إلى أن تكون منصة موثوقة لتطوير المشاريع والفرص،
+                تربط الاحتياج التنموي بالحل، والفكرة بالاستثمار، والجهات بالشركاء،
+                وترافق المشروع حتى يصبح نموذجاً قابلاً للتنفيذ والنمو والاستدامة.
               </p>
             </div>
 
@@ -126,7 +126,7 @@ export default function VisionSection() {
               className="gradient-brand px-8 font-bold text-white shadow-lg shadow-primary/20 hover:opacity-90"
             >
               <a href="#contact">
-                ابنِ مسار التطوير معنا
+                ابدأ تطوير مشروعك معنا
                 <ArrowLeft className="mr-2 h-5 w-5" />
               </a>
             </Button>
