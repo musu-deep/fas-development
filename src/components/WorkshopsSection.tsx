@@ -12,70 +12,70 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
-const workshops = [
+const programs = [
   {
-    category: "التخطيط والتنفيذ",
-    title: "ورشة بناء خطة الـ 100 يوم",
+    category: "المشاريع التنموية",
+    title: "مختبر تصميم المشروع التنموي",
     summary:
-      "مسار تطبيقي يحوّل الأولويات إلى مبادرات واضحة، ومؤشرات قياس، وجدول تنفيذ يمكن متابعته منذ اليوم الأول.",
+      "مسار تطبيقي يبدأ من تعريف المشكلة والفئة المستفيدة، وينتهي بنموذج مشروع واضح يشمل التدخلات والمخرجات والأثر وخطة التنفيذ.",
     image:
       "https://images.unsplash.com/photo-1774842391684-b819ec9bd409?auto=format&fit=crop&w=1600&q=85",
-    alt: "فريق عمل يناقش خطة تنفيذية أمام لوحة تخطيط",
-    duration: "يوم تدريبي",
-    audience: "القيادات وفرق المشاريع",
-    outcome: "خطة تنفيذ ومصفوفة متابعة",
+    alt: "فريق عمل يناقش نموذج مشروع تنموي أمام لوحة تخطيط",
+    duration: "يوم تطبيقي",
+    audience: "الجهات التنموية وفرق المبادرات",
+    outcome: "وثيقة مشروع ونموذج أثر",
   },
   {
-    category: "القيادة وبناء القدرات",
-    title: "ورشة الجاهزية المؤسسية والقيادية",
+    category: "الاستثمار وتطوير الفرص",
+    title: "برنامج بناء الفرصة الاستثمارية",
     summary:
-      "تجربة تدريبية تجمع بين التشخيص، وتطوير الممارسات القيادية، ورفع كفاءة الفرق في إدارة التغيير والعمل المشترك.",
+      "نختبر الفكرة والسوق والقيمة الاقتصادية، ونطوّر نموذج العمل والافتراضات المالية وملفاً أولياً يمكن عرضه على المستثمرين والشركاء.",
     image:
       "https://images.unsplash.com/photo-1778877035089-c80dcb877f45?auto=format&fit=crop&w=1600&q=85",
-    alt: "حضور ورشة تدريبية داخل قاعة مؤتمرات",
-    duration: "4–6 ساعات",
-    audience: "المديرون والكوادر الواعدة",
-    outcome: "خارطة تطوير للقدرات",
+    alt: "فريق استثماري يراجع مؤشرات وفرصة مشروع",
+    duration: "2–3 أيام",
+    audience: "المستثمرون وأصحاب المشاريع",
+    outcome: "ملف فرصة ونموذج مالي أولي",
   },
   {
-    category: "الابتكار ونماذج الأعمال",
-    title: "مختبر تصميم الفرص والشراكات",
+    category: "الشراكات والتحالفات",
+    title: "مختبر تصميم الشراكات الاستراتيجية",
     summary:
-      "ورشة تشاركية لتوليد الفرص، وتحليل أصحاب المصلحة، وتصميم شراكات قابلة للتنفيذ والقياس والاستدامة.",
+      "مسار تشاركي لتحليل أصحاب المصلحة، ومواءمة المصالح، وتحديد الأدوار والمساهمات، وبناء إطار حوكمة ومؤشرات نجاح للشراكة.",
     image:
       "https://images.unsplash.com/photo-1623652554515-91c833e3080e?auto=format&fit=crop&w=1600&q=85",
-    alt: "جلسة عصف ذهني تستخدم البطاقات والملاحظات اللاصقة",
-    duration: "نصف يوم",
-    audience: "فرق التطوير والاستثمار",
-    outcome: "محفظة فرص أولية",
+    alt: "جلسة عمل لتصميم شراكة باستخدام البطاقات والملاحظات",
+    duration: "نصف يوم إلى يوم",
+    audience: "القيادات وفرق الشراكات",
+    outcome: "خارطة شركاء وإطار تعاون",
   },
   {
-    category: "التطوير الرقمي",
-    title: "ورشة التحول المؤسسي وتطبيقات الذكاء الاصطناعي",
+    category: "التأسيس والتشغيل",
+    title: "برنامج خطة الإطلاق والـ 100 يوم",
     summary:
-      "نربط الاحتياج المؤسسي بحالات استخدام عملية، ونبني خارطة طريق لتوظيف التقنية والذكاء الاصطناعي في التشغيل والقرار.",
+      "نحوّل المشروع المعتمد إلى خطة إطلاق عملية تتضمن المسارات والأولويات والمسؤوليات والميزانية ومؤشرات الأداء وآلية المتابعة.",
     image:
       "https://images.unsplash.com/photo-1674509780304-b51c5e2f9dbf?auto=format&fit=crop&w=1600&q=85",
-    alt: "جلسة تخطيط لمشروع رقمي باستخدام ملاحظات ملونة",
+    alt: "جلسة تخطيط لإطلاق مشروع وتوزيع المهام",
     duration: "يوم تطبيقي",
-    audience: "القيادات وفرق التحول",
-    outcome: "خارطة حالات استخدام",
+    audience: "المؤسسون ومديرو المشاريع",
+    outcome: "خطة 100 يوم ولوحة متابعة",
   },
 ];
 
 export default function WorkshopsSection() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const activeWorkshop = workshops[activeIndex];
+  const activeProgram = programs[activeIndex];
 
   const showPrevious = () => {
     setActiveIndex((current) =>
-      current === 0 ? workshops.length - 1 : current - 1,
+      current === 0 ? programs.length - 1 : current - 1,
     );
   };
 
   const showNext = () => {
     setActiveIndex((current) =>
-      current === workshops.length - 1 ? 0 : current + 1,
+      current === programs.length - 1 ? 0 : current + 1,
     );
   };
 
@@ -93,15 +93,15 @@ export default function WorkshopsSection() {
               variant="outline"
               className="mb-4 border-primary/30 bg-primary/5 text-primary"
             >
-              ورش العمل والبرامج التطبيقية
+              البرامج والمختبرات التطبيقية
             </Badge>
             <h2 className="mb-5 text-3xl font-black md:text-4xl lg:text-5xl">
-              <span className="text-foreground">تجارب تعلّم </span>
-              <span className="text-gradient">تحوّل المعرفة إلى ممارسة</span>
+              <span className="text-foreground">مسارات عملية تنقل </span>
+              <span className="text-gradient">الفكرة إلى مشروع جاهز</span>
             </h2>
             <p className="max-w-2xl text-lg leading-8 text-muted-foreground">
-              نصمم ورشاً قابلة للتخصيص حسب احتياج الجهة، ونربط كل جلسة بمخرج عملي
-              يساعد الفريق على الانتقال من النقاش إلى التنفيذ.
+              نصمم برامج مركزة بحسب مرحلة المشروع، ونربط كل برنامج بمخرجات عملية
+              تساعد الجهة أو المستثمر على اتخاذ القرار والانتقال إلى التنفيذ.
             </p>
           </div>
 
@@ -109,7 +109,7 @@ export default function WorkshopsSection() {
             <button
               type="button"
               onClick={showPrevious}
-              aria-label="عرض الورشة السابقة"
+              aria-label="عرض البرنامج السابق"
               className="glass-panel flex h-12 w-12 items-center justify-center rounded-2xl text-foreground transition hover:border-primary/50 hover:text-primary"
             >
               <ArrowLeft className="h-5 w-5" />
@@ -117,7 +117,7 @@ export default function WorkshopsSection() {
             <button
               type="button"
               onClick={showNext}
-              aria-label="عرض الورشة التالية"
+              aria-label="عرض البرنامج التالي"
               className="gradient-brand flex h-12 w-12 items-center justify-center rounded-2xl text-white shadow-lg shadow-primary/20 transition hover:scale-105"
             >
               <ArrowRight className="h-5 w-5" />
@@ -129,9 +129,9 @@ export default function WorkshopsSection() {
           <div className="grid lg:grid-cols-[1.3fr_0.7fr]">
             <div className="group relative min-h-[420px] overflow-hidden lg:min-h-[570px]">
               <img
-                key={activeWorkshop.image}
-                src={activeWorkshop.image}
-                alt={activeWorkshop.alt}
+                key={activeProgram.image}
+                src={activeProgram.image}
+                alt={activeProgram.alt}
                 loading="lazy"
                 className="absolute inset-0 h-full w-full animate-fade-in object-cover transition-transform duration-700 group-hover:scale-[1.035]"
               />
@@ -140,15 +140,15 @@ export default function WorkshopsSection() {
 
               <div className="absolute inset-x-0 bottom-0 p-7 md:p-10">
                 <Badge className="mb-4 border border-white/20 bg-black/40 text-white backdrop-blur-md">
-                  {activeWorkshop.category}
+                  {activeProgram.category}
                 </Badge>
                 <h3 className="max-w-3xl text-2xl font-black leading-tight text-white md:text-4xl">
-                  {activeWorkshop.title}
+                  {activeProgram.title}
                 </h3>
               </div>
 
               <div className="absolute left-5 top-5 rounded-full border border-white/20 bg-black/40 px-4 py-2 text-xs font-bold text-white backdrop-blur-md">
-                {String(activeIndex + 1).padStart(2, "0")} / {String(workshops.length).padStart(2, "0")}
+                {String(activeIndex + 1).padStart(2, "0")} / {String(programs.length).padStart(2, "0")}
               </div>
             </div>
 
@@ -158,7 +158,7 @@ export default function WorkshopsSection() {
                   <Sparkles className="h-7 w-7" />
                 </div>
                 <p className="mb-8 text-base leading-8 text-muted-foreground md:text-lg">
-                  {activeWorkshop.summary}
+                  {activeProgram.summary}
                 </p>
 
                 <div className="space-y-4">
@@ -166,21 +166,21 @@ export default function WorkshopsSection() {
                     <Clock3 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
                     <div>
                       <p className="text-xs text-muted-foreground">المدة المقترحة</p>
-                      <p className="mt-1 font-bold text-foreground">{activeWorkshop.duration}</p>
+                      <p className="mt-1 font-bold text-foreground">{activeProgram.duration}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3 rounded-2xl border border-primary/10 bg-primary/5 p-4">
                     <Users className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
                     <div>
                       <p className="text-xs text-muted-foreground">الفئة المستهدفة</p>
-                      <p className="mt-1 font-bold text-foreground">{activeWorkshop.audience}</p>
+                      <p className="mt-1 font-bold text-foreground">{activeProgram.audience}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3 rounded-2xl border border-primary/10 bg-primary/5 p-4">
                     <CalendarRange className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
                     <div>
                       <p className="text-xs text-muted-foreground">المخرج الرئيسي</p>
-                      <p className="mt-1 font-bold text-foreground">{activeWorkshop.outcome}</p>
+                      <p className="mt-1 font-bold text-foreground">{activeProgram.outcome}</p>
                     </div>
                   </div>
                 </div>
@@ -192,7 +192,7 @@ export default function WorkshopsSection() {
                 className="gradient-brand mt-8 w-full font-bold text-white shadow-lg shadow-primary/20 hover:opacity-90"
               >
                 <a href="#contact">
-                  اطلب تنفيذ هذه الورشة
+                  اطلب تنفيذ هذا البرنامج
                   <ArrowLeft className="mr-2 h-5 w-5" />
                 </a>
               </Button>
@@ -201,9 +201,9 @@ export default function WorkshopsSection() {
         </div>
 
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {workshops.map((workshop, index) => (
+          {programs.map((program, index) => (
             <button
-              key={workshop.title}
+              key={program.title}
               type="button"
               onClick={() => setActiveIndex(index)}
               aria-pressed={activeIndex === index}
@@ -215,7 +215,7 @@ export default function WorkshopsSection() {
             >
               <div className="relative h-28 overflow-hidden">
                 <img
-                  src={workshop.image}
+                  src={program.image}
                   alt=""
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -223,9 +223,9 @@ export default function WorkshopsSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
               </div>
               <div className="p-4">
-                <p className="mb-2 text-[11px] font-bold text-primary">{workshop.category}</p>
+                <p className="mb-2 text-[11px] font-bold text-primary">{program.category}</p>
                 <h4 className="text-sm font-bold leading-6 text-foreground">
-                  {workshop.title}
+                  {program.title}
                 </h4>
               </div>
             </button>
