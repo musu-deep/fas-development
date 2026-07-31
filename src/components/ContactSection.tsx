@@ -70,12 +70,12 @@ export default function ContactSection() {
             تواصل معنا
           </Badge>
           <h2 className="mb-6 text-3xl font-black md:text-4xl lg:text-5xl">
-            <span className="text-foreground">لنبدأ </span>
-            <span className="text-gradient">من احتياجك الحقيقي</span>
+            <span className="text-foreground">لنبدأ من </span>
+            <span className="text-gradient">مشروعك أو فرصتك أو شراكتك</span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg leading-8 text-muted-foreground">
-            شاركنا فكرتك أو التحدي الذي تعمل عليه، وسنساعدك في تحديد المسار الأنسب
-            للتطوير والتشغيل والشراكة.
+            شاركنا الفكرة أو المشروع أو الفرصة الاستثمارية التي تعمل عليها، وسنساعدك
+            في تحديد مرحلة الجاهزية والمسار الأنسب للتطوير والشراكة والتنفيذ.
           </p>
         </div>
 
@@ -136,9 +136,9 @@ export default function ContactSection() {
           <div className="lg:col-span-3">
             <form onSubmit={handleSubmit} className="glass-panel glow rounded-3xl p-7 md:p-9">
               <div className="mb-7">
-                <h3 className="text-2xl font-bold text-foreground">أرسل رسالتك</h3>
+                <h3 className="text-2xl font-bold text-foreground">عرّفنا على مشروعك</h3>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  نحتاج معلومات مختصرة فقط لنفهم نقطة البداية.
+                  معلومات مختصرة تساعدنا على فهم المرحلة والاحتياج ونوع التعاون المناسب.
                 </p>
               </div>
 
@@ -180,22 +180,22 @@ export default function ContactSection() {
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-sm font-semibold text-foreground">الموضوع</label>
+                  <label className="text-sm font-semibold text-foreground">نوع الاحتياج</label>
                   <Input
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                    placeholder="موضوع الرسالة"
+                    placeholder="مشروع تنموي، فرصة استثمارية، شراكة..."
                     className="border-primary/15 bg-background/45 focus:border-primary"
                     required
                   />
                 </div>
 
                 <div className="space-y-2 sm:col-span-2">
-                  <label className="text-sm font-semibold text-foreground">الرسالة</label>
+                  <label className="text-sm font-semibold text-foreground">نبذة عن المشروع أو الفرصة</label>
                   <Textarea
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    placeholder="اكتب نبذة عن احتياجك أو مشروعك..."
+                    placeholder="اذكر الفكرة، المرحلة الحالية، الجهات المعنية، والنتيجة التي تسعى إليها..."
                     className="min-h-[150px] resize-none border-primary/15 bg-background/45 focus:border-primary"
                     required
                   />
@@ -215,7 +215,7 @@ export default function ContactSection() {
                   </span>
                 ) : (
                   <span className="flex items-center gap-2">
-                    إرسال الرسالة
+                    إرسال تفاصيل المشروع
                     <Send className="h-5 w-5" />
                   </span>
                 )}
