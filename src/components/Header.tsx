@@ -12,6 +12,7 @@ const navItems = [
   { name: "الرئيسية", href: "#home" },
   { name: "من نحن", href: "#about" },
   { name: "مجالات العمل", href: "#services" },
+  { name: "الخدمات والباقات", href: "#packages" },
   { name: "البرامج والمختبرات", href: "#workshops" },
   { name: "الشراكات", href: "#partners" },
   { name: "الرؤية", href: "#vision" },
