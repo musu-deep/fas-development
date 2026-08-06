@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
+import ServicesMarketplaceSection from "@/components/ServicesMarketplaceSection";
 import WorkshopsSection from "@/components/WorkshopsSection";
 import PartnersSection from "@/components/PartnersSection";
 import VisionSection from "@/components/VisionSection";
@@ -23,6 +24,11 @@ export default function Home() {
       <div className="section-divider" />
 
       <ServicesSection />
+
+      {/* Section Divider */}
+      <div className="section-divider" />
+
+      <ServicesMarketplaceSection />
 
       {/* Section Divider */}
       <div className="section-divider" />
