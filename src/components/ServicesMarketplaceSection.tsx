@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState, type FormEvent } from "react";
+import { useMemo, useState, type FormEvent, type MouseEvent } from "react";
 import {
   ArrowLeft,
   BarChart3,
@@ -399,7 +399,7 @@ export default function ServicesMarketplaceSection() {
           role="dialog"
           aria-modal="true"
           aria-labelledby="services-checkout-title"
-          onMouseDown={(event) => {
+          onMouseDown={(event: MouseEvent<HTMLDivElement>) => {
             if (event.target === event.currentTarget) setIsCheckoutOpen(false);
           }}
         >
