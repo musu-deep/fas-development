@@ -21,6 +21,10 @@ export const metadata: Metadata = {
     "السعودية",
   ],
   authors: [{ name: "Farah Development" }],
+  icons: {
+    icon: [{ url: "/icon.svg?v=20260823-2", type: "image/svg+xml" }],
+    shortcut: "/icon.svg?v=20260823-2",
+  },
   openGraph: {
     title: "فرح التنمية | تطوير المشاريع والاستثمار والشراكات",
     description: "نطوّر الفرص ونبني المشاريع والشراكات من الفكرة إلى التنفيذ والنمو.",
@@ -63,6 +67,8 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitializationScript }} />
         <meta name="theme-color" content="#0b0a18" />
+        <link rel="icon" href="/icon.svg?v=20260823-2" type="image/svg+xml" sizes="any" />
+        <link rel="shortcut icon" href="/icon.svg?v=20260823-2" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
