@@ -33,7 +33,7 @@ export default function HeroSection() {
               </span>
             </div>
 
-            <h1 className="animate-slide-up text-4xl font-black leading-[1.25] opacity-0 stagger-1 md:text-5xl lg:text-6xl xl:text-7xl">
+            <h1 className="animate-slide-up text-4xl font-black leading-[1.42] opacity-0 stagger-1 md:text-5xl md:leading-[1.38] lg:text-6xl lg:leading-[1.34] xl:text-7xl xl:leading-[1.3]">
               <span className="text-foreground">نطوّر الفرص ونبني</span>
               <br />
               <span className="text-gradient glow-text">المشاريع والشراكات</span>
