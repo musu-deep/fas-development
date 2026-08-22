@@ -19,8 +19,8 @@ const programs = [
     summary:
       "مسار تطبيقي يبدأ من تعريف المشكلة والفئة المستفيدة، وينتهي بنموذج مشروع واضح يشمل التدخلات والمخرجات والأثر وخطة التنفيذ.",
     image:
-      "https://images.unsplash.com/photo-1774842391684-b819ec9bd409?auto=format&fit=crop&w=1600&q=85",
-    alt: "فريق عمل يناقش نموذج مشروع تنموي أمام لوحة تخطيط",
+      "https://images.pexels.com/photos/37074462/pexels-photo-37074462.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    alt: "مشهد حديث لمنطقة الأعمال في الرياض يعكس النمو والتطوير الحضري في المملكة",
     duration: "يوم تطبيقي",
     audience: "الجهات التنموية وفرق المبادرات",
     outcome: "وثيقة مشروع ونموذج أثر",
@@ -31,8 +31,8 @@ const programs = [
     summary:
       "نختبر الفكرة والسوق والقيمة الاقتصادية، ونطوّر نموذج العمل والافتراضات المالية وملفاً أولياً يمكن عرضه على المستثمرين والشركاء.",
     image:
-      "https://images.unsplash.com/photo-1778877035089-c80dcb877f45?auto=format&fit=crop&w=1600&q=85",
-    alt: "فريق استثماري يراجع مؤشرات وفرصة مشروع",
+      "https://images.pexels.com/photos/34475406/pexels-photo-34475406.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    alt: "مساحة أعمال حديثة بإطلالة على مدينة الرياض تعكس بيئة الاستثمار والفرص",
     duration: "2–3 أيام",
     audience: "المستثمرون وأصحاب المشاريع",
     outcome: "ملف فرصة ونموذج مالي أولي",
@@ -43,8 +43,8 @@ const programs = [
     summary:
       "مسار تشاركي لتحليل أصحاب المصلحة، ومواءمة المصالح، وتحديد الأدوار والمساهمات، وبناء إطار حوكمة ومؤشرات نجاح للشراكة.",
     image:
-      "https://images.unsplash.com/photo-1623652554515-91c833e3080e?auto=format&fit=crop&w=1600&q=85",
-    alt: "جلسة عمل لتصميم شراكة باستخدام البطاقات والملاحظات",
+      "https://images.pexels.com/photos/5272746/pexels-photo-5272746.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    alt: "مشهد حضري من جدة يجمع بين العمارة المحلية والتطور الحديث في المملكة",
     duration: "نصف يوم إلى يوم",
     audience: "القيادات وفرق الشراكات",
     outcome: "خارطة شركاء وإطار تعاون",
@@ -55,8 +55,8 @@ const programs = [
     summary:
       "نحوّل المشروع المعتمد إلى خطة إطلاق عملية تتضمن المسارات والأولويات والمسؤوليات والميزانية ومؤشرات الأداء وآلية المتابعة.",
     image:
-      "https://images.unsplash.com/photo-1674509780304-b51c5e2f9dbf?auto=format&fit=crop&w=1600&q=85",
-    alt: "جلسة تخطيط لإطلاق مشروع وتوزيع المهام",
+      "https://images.pexels.com/photos/34767144/pexels-photo-34767144.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    alt: "تصميم حديث لمحطة مترو الرياض يرمز إلى التنفيذ والكفاءة والبنية التحتية المتقدمة",
     duration: "يوم تطبيقي",
     audience: "المؤسسون ومديرو المشاريع",
     outcome: "خطة 100 يوم ولوحة متابعة",
