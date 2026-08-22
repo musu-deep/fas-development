@@ -16,6 +16,17 @@ export default function HeroSection() {
       id="home"
       className="relative flex min-h-screen items-center overflow-hidden pb-20 pt-32 lg:pt-36"
     >
+      <div className="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1770685798053-c7b282cc3188?auto=format&fit=crop&w=2400&q=88"
+          alt=""
+          aria-hidden="true"
+          className="h-full w-full object-cover object-center opacity-45"
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,6,22,0.88)_0%,rgba(20,10,44,0.77)_50%,rgba(8,6,22,0.9)_100%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#090815]/35 via-[#120b28]/55 to-[#090815]/85" />
+      </div>
+
       <div className="absolute inset-0 gradient-radial" />
       <div className="absolute inset-0 grid-pattern opacity-55" />
       <div className="absolute inset-0 noise-overlay" />
