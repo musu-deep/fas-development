@@ -14,20 +14,14 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center overflow-hidden bg-[#090815] pb-20 pt-32 lg:pt-36"
+      className="relative flex min-h-screen items-center overflow-hidden bg-cover bg-center bg-no-repeat pb-20 pt-32 lg:pt-36"
+      style={{
+        backgroundImage: "url('/hero-fasdev-2026.png?v=20260823-3')",
+        backgroundColor: "#090815",
+      }}
     >
-      <div className="absolute inset-0">
-        <img
-          src="/hero-fasdev-2026.png?v=20260823-2"
-          alt=""
-          aria-hidden="true"
-          className="h-full w-full object-cover object-center"
-          style={{ opacity: 1, filter: "brightness(1.18) saturate(1.08)" }}
-        />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,6,22,0.02)_0%,rgba(12,8,28,0.07)_46%,rgba(8,6,22,0.28)_100%)]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#090815]/10" />
-      </div>
-
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-full bg-[linear-gradient(270deg,rgba(8,6,22,0.62)_0%,rgba(8,6,22,0.42)_34%,rgba(8,6,22,0.12)_68%,transparent_100%)] lg:w-[62%]" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#090815]/30 to-transparent" />
 
       <div className="absolute right-[8%] top-[18%] h-80 w-80 rounded-full bg-primary/5 blur-[110px]" />
       <div className="absolute bottom-[12%] left-[4%] h-96 w-96 rounded-full bg-violet-700/5 blur-[130px]" />
