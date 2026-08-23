@@ -21,14 +21,14 @@ export default function HeroSection() {
           src="/hero-fasdev-2026.png?v=20260823-2"
           alt=""
           aria-hidden="true"
-          className="h-full w-full object-cover object-center opacity-100"
+          className="h-full w-full object-cover object-center"\n          style={{ opacity: 1, filter: "brightness(1.18) saturate(1.08)" }}
         />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,6,22,0.34)_0%,rgba(20,10,44,0.20)_50%,rgba(8,6,22,0.38)_100%)]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#090815]/5 via-[#120b28]/10 to-[#090815]/34" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,6,22,0.06)_0%,rgba(12,8,28,0.16)_44%,rgba(8,6,22,0.48)_100%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#090815]/20" />
       </div>
 
       <div className="absolute inset-0 gradient-radial opacity-25" />
-      <div className="absolute inset-0 grid-pattern opacity-15" />
+      <div className="absolute inset-0 grid-pattern opacity-[0.08]" />
       <div className="absolute inset-0 noise-overlay" />
 
       <div className="absolute right-[8%] top-[18%] h-80 w-80 rounded-full bg-primary/10 blur-[110px]" />
