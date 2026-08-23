@@ -16,7 +16,7 @@ export default function HeroSection() {
       id="home"
       className="relative flex min-h-screen items-center overflow-hidden bg-cover bg-center bg-no-repeat pb-20 pt-32 lg:pt-36"
       style={{
-        backgroundImage: "url('/hero-fasdev-2026.png?v=20260823-3')",
+        backgroundImage: "url('/hero-fasdev-2026.png?v=20260823-4')",
         backgroundColor: "#090815",
       }}
     >
