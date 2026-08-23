@@ -18,17 +18,17 @@ export default function HeroSection() {
     >
       <div className="absolute inset-0">
         <img
-          src="/hero-fasdev-2026.png"
+          src="/hero-fasdev-2026.png?v=20260823-2"
           alt=""
           aria-hidden="true"
-          className="h-full w-full object-cover object-center opacity-78"
+          className="h-full w-full object-cover object-center opacity-100"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,6,22,0.60)_0%,rgba(20,10,44,0.44)_50%,rgba(8,6,22,0.62)_100%)]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#090815]/10 via-[#120b28]/22 to-[#090815]/52" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,6,22,0.34)_0%,rgba(20,10,44,0.20)_50%,rgba(8,6,22,0.38)_100%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#090815]/5 via-[#120b28]/10 to-[#090815]/34" />
       </div>
 
-      <div className="absolute inset-0 gradient-radial opacity-60" />
-      <div className="absolute inset-0 grid-pattern opacity-35" />
+      <div className="absolute inset-0 gradient-radial opacity-25" />
+      <div className="absolute inset-0 grid-pattern opacity-15" />
       <div className="absolute inset-0 noise-overlay" />
 
       <div className="absolute right-[8%] top-[18%] h-80 w-80 rounded-full bg-primary/10 blur-[110px]" />
