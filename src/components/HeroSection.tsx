@@ -18,7 +18,7 @@ export default function HeroSection() {
     >
       <div className="absolute inset-0">
         <img
-          src="https://images.pexels.com/photos/37074462/pexels-photo-37074462.jpeg?auto=compress&cs=tinysrgb&w=2400"
+          src="/hero-fasdev-2026.png"
           alt=""
           aria-hidden="true"
           className="h-full w-full object-cover object-center opacity-78"
