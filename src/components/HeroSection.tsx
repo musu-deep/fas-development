@@ -23,16 +23,16 @@ export default function HeroSection() {
           aria-hidden="true"
           className="h-full w-full object-cover object-center"\n          style={{ opacity: 1, filter: "brightness(1.18) saturate(1.08)" }}
         />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,6,22,0.06)_0%,rgba(12,8,28,0.16)_44%,rgba(8,6,22,0.48)_100%)]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#090815]/20" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,6,22,0.02)_0%,rgba(12,8,28,0.07)_46%,rgba(8,6,22,0.28)_100%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#090815]/10" />
       </div>
 
       <div className="absolute inset-0 gradient-radial opacity-25" />
       <div className="absolute inset-0 grid-pattern opacity-[0.08]" />
       <div className="absolute inset-0 noise-overlay" />
 
-      <div className="absolute right-[8%] top-[18%] h-80 w-80 rounded-full bg-primary/10 blur-[110px]" />
-      <div className="absolute bottom-[12%] left-[4%] h-96 w-96 rounded-full bg-violet-700/10 blur-[130px]" />
+      <div className="absolute right-[8%] top-[18%] h-80 w-80 rounded-full bg-primary/5 blur-[110px]" />
+      <div className="absolute bottom-[12%] left-[4%] h-96 w-96 rounded-full bg-violet-700/5 blur-[130px]" />
 
       <div className="container relative z-10 mx-auto px-6">
         <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
