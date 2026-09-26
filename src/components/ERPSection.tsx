@@ -107,9 +107,7 @@ export default function ERPSection() {
               </div>
               <span className="text-sm font-semibold text-violet-200">منهجية التنفيذ</span>
               <h3 className="mt-3 text-3xl font-black leading-tight md:text-4xl">
-                نبدأ من العملية،
-                <br />
-                لا من البرنامج.
+                تفكيك العمليات ودراسة احتياج البرامج والمشاريع
               </h3>
             </div>
 
