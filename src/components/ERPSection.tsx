@@ -64,9 +64,15 @@ export default function ERPSection() {
               خدمة متخصصة / ERP
             </Badge>
             <h2 className="text-3xl font-black leading-tight md:text-4xl lg:text-5xl">
+              <span className="text-foreground">أنظمة تخطيط موارد المؤسسات (ERP) للمؤسسات الكبيرة ونقاط البيع</span>
+            </h2>
+            <p className="mt-4 text-base font-semibold leading-8 text-primary/90 md:text-lg">
+              أنظمة تخطيط موارد المؤسسات (ERP) للمصانع الكبيرة ونقاط البيع
+            </p>
+            <p className="mt-5 text-2xl font-black leading-tight md:text-3xl lg:text-4xl">
               <span className="text-foreground">من التعقيد إلى </span>
               <span className="text-gradient">السيطرة الكاملة على عملياتك</span>
-            </h2>
+            </p>
           </div>
           <p className="text-base leading-8 text-muted-foreground lg:text-lg">
             نصمم ونطبق أنظمة تخطيط موارد المؤسسات للمصانع الكبيرة وشبكات نقاط البيع
