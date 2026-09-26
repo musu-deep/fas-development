@@ -20,8 +20,14 @@ export default function ExcellenceSection() {
       <div className="absolute inset-0 opacity-[0.07]" style={{backgroundImage:"linear-gradient(to right,hsl(var(--primary)) 1px,transparent 1px),linear-gradient(to bottom,hsl(var(--primary)) 1px,transparent 1px)",backgroundSize:"42px 42px"}} />
       <div className="container relative z-10 mx-auto px-6">
         <div className="overflow-hidden rounded-[2.2rem] border border-primary/15 bg-card/70 shadow-2xl shadow-primary/10 backdrop-blur-xl">
-          <div className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-[#111127] to-violet-950">
-            <div className="absolute inset-0 grid-pattern opacity-10" />
+          <div className="relative overflow-hidden bg-slate-950">
+            <div
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2000&q=85')" }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-[#111127]/88 to-violet-950/82" />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-950/35" />
+            <div className="absolute inset-0 grid-pattern opacity-[0.08]" />
             <div className="relative z-10 grid min-h-[470px] lg:grid-cols-[1.05fr_.95fr] lg:items-center">
               <div className="flex flex-col justify-center p-8 text-white md:p-12 lg:p-16">
                 <Badge variant="outline" className="mb-5 w-fit border-white/25 bg-white/10 text-violet-100">الجودة والتميز المؤسسي</Badge>
