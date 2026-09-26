@@ -13,6 +13,7 @@ const navItems = [
   { name: "من نحن", href: "#about" },
   { name: "مجالات العمل", href: "#services" },
   { name: "أنظمة ERP", href: "#erp" },
+  { name: "التميز المؤسسي", href: "#excellence" },
   { name: "البرامج والمختبرات", href: "#workshops" },
   { name: "الشراكات", href: "#partners" },
   { name: "الرؤية", href: "#vision" },
