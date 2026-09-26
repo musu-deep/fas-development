@@ -20,13 +20,29 @@ export default function ExcellenceSection() {
       <div className="absolute inset-0 opacity-[0.07]" style={{backgroundImage:"linear-gradient(to right,hsl(var(--primary)) 1px,transparent 1px),linear-gradient(to bottom,hsl(var(--primary)) 1px,transparent 1px)",backgroundSize:"42px 42px"}} />
       <div className="container relative z-10 mx-auto px-6">
         <div className="overflow-hidden rounded-[2.2rem] border border-primary/15 bg-card/70 shadow-2xl shadow-primary/10 backdrop-blur-xl">
-          <div className="relative min-h-[420px] overflow-hidden">
-            <img src="https://cdn.prod.website-files.com/6703a924c397120bfe2f2515/680679ebd6c5f59f92dc591f_AD_4nXf5Jr4yYPedJtYwlxwOI_NydcTUw_aX0g-4fmx5x-6uKd4ulQW6HMCvG8cF-axNozeC0W_HbCR9Bb6TZT6ihGIlyeUdb8o3nJrmbeT5CypAVZwTE3C3WFuO2kgtsEY6x1-bT_1G.jpeg" alt="لوحة مؤشرات مؤسسية في بيئة عمل حديثة بدون أشخاص" className="absolute inset-0 h-full w-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-l from-slate-950/95 via-slate-950/75 to-violet-950/35" />
-            <div className="relative z-10 flex min-h-[420px] max-w-4xl flex-col justify-center p-8 text-white md:p-12 lg:p-16">
-              <Badge variant="outline" className="mb-5 w-fit border-white/25 bg-white/10 text-violet-100">التميز المؤسسي</Badge>
-              <h2 className="max-w-3xl text-3xl font-black leading-tight md:text-5xl lg:text-6xl">التميز ليس جائزة.<br/><span className="text-violet-200">إنه منظومة عمل وثقافة أداء</span></h2>
-              <p className="mt-6 max-w-2xl text-base leading-8 text-white/75">نساعد المؤسسات على الانتقال من المبادرات المتفرقة إلى منظومة متكاملة تربط الاستراتيجية بالعمليات والنتائج والتحسين المستمر.</p>
+          <div className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-[#111127] to-violet-950">
+            <div className="absolute inset-0 grid-pattern opacity-10" />
+            <div className="relative z-10 grid min-h-[470px] lg:grid-cols-[1.05fr_.95fr] lg:items-center">
+              <div className="flex flex-col justify-center p-8 text-white md:p-12 lg:p-16">
+                <Badge variant="outline" className="mb-5 w-fit border-white/25 bg-white/10 text-violet-100">الجودة والتميز المؤسسي</Badge>
+                <h2 className="max-w-3xl text-3xl font-black leading-tight md:text-5xl lg:text-6xl">
+                  الجودة والتميز المؤسسي
+                  <br/>
+                  <span className="text-violet-200">منظومة عمل وثقافة أداء</span>
+                </h2>
+                <p className="mt-6 max-w-2xl text-base leading-8 text-white/75">نساعد المؤسسات على الانتقال من المبادرات المتفرقة إلى منظومة متكاملة تربط الاستراتيجية بالعمليات والنتائج والتحسين المستمر.</p>
+              </div>
+
+              <div className="relative flex min-h-[390px] items-center justify-center p-6 md:p-10 lg:min-h-[470px]">
+                <div className="absolute inset-8 rounded-full bg-cyan-400/10 blur-[80px]" />
+                <div className="relative w-full max-w-[470px] rounded-[2rem] border border-white/15 bg-white p-4 shadow-2xl shadow-black/35 md:p-6">
+                  <img
+                    src="https://pbs.twimg.com/media/EgVUMDqWkAAec0O.jpg"
+                    alt="نموذج التميز المؤسسي: التوجه والتنفيذ والنتائج ومعاييرها"
+                    className="h-auto w-full object-contain"
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
