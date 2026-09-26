@@ -92,8 +92,8 @@ export default function PartnersSection() {
             منظومة الشراكات
           </Badge>
           <h2 className="mb-5 text-3xl font-black md:text-4xl lg:text-5xl">
-            <span className="text-foreground">نجمع الأطراف حول </span>
-            <span className="text-gradient">فرصة ومشروع وقيمة مشتركة</span>
+            <span className="text-foreground">نحوّل العلاقات إلى </span>
+            <span className="text-gradient">فرص ومشاريع وقيمة مشتركة</span>
           </h2>
           <p className="mx-auto max-w-3xl text-lg leading-8 text-muted-foreground">
             نبني الشراكات بين الجهات التنموية والمستثمرين والمطورين ومقدمي الخبرة،
