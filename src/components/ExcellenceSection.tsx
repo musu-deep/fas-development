@@ -33,19 +33,48 @@ export default function ExcellenceSection() {
                 <p className="mt-6 max-w-2xl text-base leading-8 text-white/75">نساعد المؤسسات على الانتقال من المبادرات المتفرقة إلى منظومة متكاملة تربط الاستراتيجية بالعمليات والنتائج والتحسين المستمر.</p>
               </div>
 
-              <div className="relative flex min-h-[390px] items-center justify-center overflow-hidden p-4 md:p-8 lg:min-h-[470px]">
-                <div className="absolute inset-[12%] rounded-full bg-violet-500/20 blur-[90px]" />
-                <div className="absolute right-[12%] top-[18%] h-36 w-36 rounded-full bg-cyan-400/15 blur-[70px]" />
-                <div className="relative w-full max-w-[500px]">
-                  <img
-                    src="https://pbs.twimg.com/media/EgVUMDqWkAAec0O.jpg"
-                    alt="نموذج التميز المؤسسي: التوجه والتنفيذ والنتائج ومعاييرها"
-                    className="h-auto w-full scale-[1.04] object-contain mix-blend-screen brightness-[0.78] contrast-[1.35] saturate-[1.35] hue-rotate-[18deg] drop-shadow-[0_24px_45px_rgba(109,40,217,0.28)]"
-                  />
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-cyan-400/10 mix-blend-color" />
+              <div className="relative flex min-h-[430px] items-center justify-center overflow-hidden p-5 md:p-8 lg:min-h-[500px]">
+                <div className="absolute inset-[10%] rounded-full bg-violet-500/20 blur-[95px]" />
+                <div className="relative aspect-square w-full max-w-[520px]">
+                  <div className="absolute inset-[5%] rounded-full border-[5px] border-cyan-400/55 shadow-[0_0_45px_rgba(34,211,238,.16)]" />
+                  <div className="absolute inset-[7%] rounded-full border border-white/10" />
+
+                  <div className="absolute left-1/2 top-[15%] flex h-[35%] w-[35%] -translate-x-1/2 items-center justify-center rounded-full border-2 border-cyan-300/60 bg-gradient-to-br from-cyan-500/90 to-blue-700/95 text-center shadow-[0_0_35px_rgba(6,182,212,.35)]">
+                    <span className="text-xl font-black text-white md:text-3xl">التوجه</span>
+                  </div>
+                  <div className="absolute bottom-[17%] left-[17%] flex h-[35%] w-[35%] items-center justify-center rounded-full border-2 border-emerald-300/60 bg-gradient-to-br from-emerald-500/90 to-teal-800/95 text-center shadow-[0_0_35px_rgba(16,185,129,.28)]">
+                    <span className="text-xl font-black text-white md:text-3xl">النتائج</span>
+                  </div>
+                  <div className="absolute bottom-[17%] right-[17%] flex h-[35%] w-[35%] items-center justify-center rounded-full border-2 border-violet-300/60 bg-gradient-to-br from-blue-600/95 to-violet-900/95 text-center shadow-[0_0_35px_rgba(124,58,237,.35)]">
+                    <span className="text-xl font-black text-white md:text-3xl">التنفيذ</span>
+                  </div>
+                  <div className="absolute left-1/2 top-1/2 z-20 flex h-[18%] w-[18%] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 border-white/60 bg-slate-600/95 text-center shadow-xl">
+                    <span className="text-xs font-bold text-white md:text-sm">المؤسسة</span>
+                  </div>
+
+                  {[
+                    ["top-[5%] left-[20%]","الغاية والرؤية والاستراتيجية","from-cyan-700 to-blue-900"],
+                    ["top-[5%] right-[20%]","الثقافة المؤسسية والقيادة","from-blue-700 to-indigo-950"],
+                    ["left-[1%] bottom-[31%]","انطباعات المعنيين","from-emerald-700 to-teal-950"],
+                    ["left-[10%] bottom-[7%]","الأداء الاستراتيجي والتشغيلي","from-emerald-800 to-slate-950"],
+                    ["right-[1%] bottom-[31%]","إشراك المعنيين","from-violet-700 to-indigo-950"],
+                    ["right-[7%] bottom-[11%]","خلق قيمة مستدامة","from-violet-700 to-purple-950"],
+                    ["right-[29%] bottom-[1%]","قيادة الأداء والتحول","from-indigo-700 to-violet-950"],
+                  ].map(([pos,label,grad]) => (
+                    <div key={label} className={`absolute ${pos} z-30 flex h-[18%] w-[18%] items-center justify-center rounded-full border border-white/35 bg-gradient-to-br ${grad} p-2 text-center shadow-lg`}>
+                      <span className="text-[9px] font-bold leading-tight text-white md:text-[11px]">{label}</span>
+                    </div>
+                  ))}
+
+                  <svg className="pointer-events-none absolute inset-0 h-full w-full opacity-70" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+                    <path d="M30 28 C20 38,20 57,29 67" stroke="white" strokeOpacity=".55" strokeWidth=".8" strokeDasharray="2 2"/>
+                    <path d="M70 28 C80 38,80 57,71 67" stroke="white" strokeOpacity=".55" strokeWidth=".8" strokeDasharray="2 2"/>
+                    <path d="M31 78 C43 88,57 88,69 78" stroke="white" strokeOpacity=".55" strokeWidth=".8" strokeDasharray="2 2"/>
+                  </svg>
                 </div>
               </div>
             </div>
+          </div>
           </div>
 
           <div className="grid gap-px bg-primary/10 md:grid-cols-2 lg:grid-cols-3">
