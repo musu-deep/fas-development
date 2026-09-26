@@ -75,7 +75,6 @@ export default function ExcellenceSection() {
               </div>
             </div>
           </div>
-          </div>
 
           <div className="grid gap-px bg-primary/10 md:grid-cols-2 lg:grid-cols-3">
             {tracks.map((item) => (
