@@ -66,10 +66,7 @@ export default function ERPSection() {
             <h2 className="text-3xl font-black leading-tight md:text-4xl lg:text-5xl">
               <span className="text-foreground">أنظمة تخطيط موارد المؤسسات (ERP) للمؤسسات الكبيرة ونقاط البيع</span>
             </h2>
-            <p className="mt-4 text-base font-semibold leading-8 text-primary/90 md:text-lg">
-              أنظمة تخطيط موارد المؤسسات (ERP) للمصانع الكبيرة ونقاط البيع
-            </p>
-            <p className="mt-5 text-2xl font-black leading-tight md:text-3xl lg:text-4xl">
+            <p className="mt-6 text-2xl font-black leading-tight md:text-3xl lg:text-4xl">
               <span className="text-foreground">من التعقيد إلى </span>
               <span className="text-gradient">السيطرة الكاملة على عملياتك</span>
             </p>
