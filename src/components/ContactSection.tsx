@@ -70,8 +70,7 @@ export default function ContactSection() {
             تواصل معنا
           </Badge>
           <h2 className="mb-6 text-3xl font-black md:text-4xl lg:text-5xl">
-            <span className="text-foreground">لنبدأ من </span>
-            <span className="text-gradient">مشروعك أو فرصتك أو شراكتك</span>
+            <span className="text-gradient">لنبدأ الآن</span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg leading-8 text-muted-foreground">
             شاركنا الفكرة أو المشروع أو الفرصة الاستثمارية التي تعمل عليها، وسنساعدك
