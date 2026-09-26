@@ -41,6 +41,58 @@ export default function ExcellenceSection() {
           </div>
         </div>
 
+        <div className="mt-8 rounded-[2rem] border border-primary/15 bg-card/70 p-7 shadow-xl shadow-primary/5 backdrop-blur-xl lg:p-10">
+          <div className="grid gap-10 lg:grid-cols-[.85fr_1.15fr] lg:items-center">
+            <div className="rounded-[1.7rem] bg-gradient-to-br from-slate-950 via-violet-950 to-slate-950 p-7 text-white">
+              <div className="mb-5 flex items-center justify-between gap-4">
+                <div>
+                  <span className="text-xs font-bold text-violet-200">مرجع عالمي للتميز المؤسسي</span>
+                  <h3 className="mt-2 text-2xl font-black">نموذج EFQM 2025</h3>
+                </div>
+                <img src="https://efqm.org/wp-content/uploads/2024/05/GRAPHICS.png" alt="الرسم الرسمي لنموذج EFQM" className="h-24 w-24 object-contain opacity-90" />
+              </div>
+              <p className="text-sm leading-7 text-white/70">يقوم منطق النموذج على ثلاثة أسئلة مترابطة: لماذا توجد المؤسسة؟ كيف تنفذ غايتها واستراتيجيتها؟ وما النتائج التي حققتها وتستهدفها؟</p>
+              <div className="mt-7 grid grid-cols-3 gap-3 text-center">
+                {[
+                  ["https://efqm.org/wp-content/uploads/2025/03/direction-icon.png","التوجه","لماذا؟"],
+                  ["https://efqm.org/wp-content/uploads/2025/03/execution-icon.png","التنفيذ","كيف؟"],
+                  ["https://efqm.org/wp-content/uploads/2025/03/result-icon.png","النتائج","ماذا؟"],
+                ].map(([src,title,q]) => (
+                  <div key={title} className="rounded-2xl border border-white/10 bg-white/[0.06] p-3">
+                    <img src={src} alt={title} className="mx-auto h-16 w-16 object-contain" />
+                    <b className="mt-2 block text-sm">{title}</b>
+                    <small className="text-white/50">{q}</small>
+                  </div>
+                ))}
+              </div>
+              <a href="https://efqm.org/the-efqm-model/" target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 text-xs font-semibold text-violet-200 hover:text-white">المصدر الرسمي: EFQM <ArrowLeft className="h-4 w-4"/></a>
+            </div>
+
+            <div>
+              <Badge variant="outline" className="mb-4 border-primary/30 bg-primary/5 text-primary">المعايير السبعة</Badge>
+              <h3 className="text-2xl font-black text-foreground md:text-3xl">قراءة المؤسسة كمنظومة واحدة</h3>
+              <p className="mt-3 text-sm leading-7 text-muted-foreground">نستخدم بنية النموذج كمرجع لفهم العلاقة بين التوجه والتنفيذ والنتائج، ثم نحول فجوات الأداء إلى أولويات تطوير قابلة للقياس.</p>
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                {[
+                  ["01","الغاية والرؤية والاستراتيجية"],
+                  ["02","الثقافة المؤسسية والقيادة"],
+                  ["03","إشراك أصحاب المصلحة"],
+                  ["04","بناء قيمة مستدامة"],
+                  ["05","قيادة الأداء والتحول"],
+                  ["06","انطباعات أصحاب المصلحة"],
+                  ["07","الأداء الاستراتيجي والتشغيلي"],
+                ].map(([n,title]) => (
+                  <div key={n} className="flex items-center gap-3 rounded-2xl border border-primary/10 bg-background/70 p-4">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-xs font-black text-primary">{n}</span>
+                    <span className="text-sm font-bold text-foreground">{title}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-5 text-xs leading-6 text-muted-foreground">EFQM® علامة مملوكة للمؤسسة الأوروبية لإدارة الجودة. عرض النموذج هنا لأغراض التعريف بالمرجعية والمنهجية، ولا يعني اعتماداً أو شراكة من EFQM.</p>
+            </div>
+          </div>
+        </div>
+
         <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_.9fr]">
           <div className="rounded-[2rem] border border-primary/15 bg-gradient-to-br from-primary/10 to-card p-8 lg:p-10">
             <div className="mb-5 flex items-center gap-3 text-primary"><Sparkles className="h-6 w-6"/><span className="font-bold">من التشخيص إلى الاستدامة</span></div>
