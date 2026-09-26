@@ -9,6 +9,8 @@ import {
   Network,
   RefreshCw,
   Store,
+  Zap,
+  HardHat,
   TrendingUp,
   Workflow,
 } from "lucide-react";
@@ -30,6 +32,16 @@ const audiences = [
     icon: TrendingUp,
     title: "الشركات سريعة التوسع",
     text: "الانتقال من إكسل والأنظمة المنفصلة والجرد اليدوي إلى منصة موحّدة قابلة للنمو.",
+  },
+  {
+    icon: Zap,
+    title: "شركات العقد الموحد للكهرباء",
+    text: "إدارة المشاريع والعقود والفرق الميدانية والمشتريات والمخزون والتكاليف ضمن منظومة تشغيلية مترابطة.",
+  },
+  {
+    icon: HardHat,
+    title: "شركات الاستشارات الهندسية",
+    text: "ربط المشاريع والموارد والمهام والتكاليف والمستندات والتقارير في منصة موحّدة تدعم المتابعة واتخاذ القرار.",
   },
 ];
 
@@ -77,7 +89,7 @@ export default function ERPSection() {
           </p>
         </div>
 
-        <div className="mb-6 grid gap-6 md:grid-cols-3">
+        <div className="mb-6 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
           {audiences.map((item) => (
             <article key={item.title} className="glass-panel card-hover rounded-3xl p-7">
               <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl gradient-brand shadow-lg shadow-primary/15">
