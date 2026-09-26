@@ -101,12 +101,14 @@ export default function ERPSection() {
 
         <div className="mt-16 overflow-hidden rounded-[2rem] border border-primary/15 bg-gradient-to-br from-slate-950 via-violet-950 to-slate-950 text-white shadow-2xl shadow-primary/10">
           <div className="grid lg:grid-cols-[.75fr_1.25fr]">
-            <div className="flex flex-col items-center justify-center border-b border-white/10 p-8 text-center lg:border-b-0 lg:border-l lg:p-10">
-              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10">
-                <Workflow className="h-7 w-7 text-violet-200" />
+            <div className="relative flex min-h-[360px] items-center justify-center border-b border-white/10 p-8 text-center lg:min-h-full lg:border-b-0 lg:border-l lg:p-10">
+              <div className="absolute right-8 top-8 text-right lg:right-10 lg:top-10">
+                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10">
+                  <Workflow className="h-7 w-7 text-violet-200" />
+                </div>
+                <span className="text-sm font-semibold text-violet-200">منهجية التنفيذ</span>
               </div>
-              <span className="text-sm font-semibold text-violet-200">منهجية التنفيذ</span>
-              <h3 className="mt-3 max-w-md text-3xl font-black leading-tight md:text-4xl">
+              <h3 className="max-w-md text-3xl font-black leading-tight md:text-4xl">
                 تفكيك العمليات ودراسة احتياج البرامج والمشاريع
               </h3>
             </div>
