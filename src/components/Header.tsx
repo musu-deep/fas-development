@@ -14,7 +14,7 @@ const navItems = [
   { name: "مجالات العمل", href: "#services" },
   { name: "أنظمة ERP", href: "#erp" },
   { name: "التميز المؤسسي", href: "#excellence" },
-  { name: "البرامج والمختبرات", href: "#workshops" },
+  { name: "مختبر البرامج", href: "#workshops" },
   { name: "الشراكات", href: "#partners" },
   { name: "الرؤية", href: "#vision" },
   { name: "تواصل معنا", href: "#contact" },
