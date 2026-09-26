@@ -33,14 +33,16 @@ export default function ExcellenceSection() {
                 <p className="mt-6 max-w-2xl text-base leading-8 text-white/75">نساعد المؤسسات على الانتقال من المبادرات المتفرقة إلى منظومة متكاملة تربط الاستراتيجية بالعمليات والنتائج والتحسين المستمر.</p>
               </div>
 
-              <div className="relative flex min-h-[390px] items-center justify-center p-6 md:p-10 lg:min-h-[470px]">
-                <div className="absolute inset-8 rounded-full bg-cyan-400/10 blur-[80px]" />
-                <div className="relative w-full max-w-[470px] rounded-[2rem] border border-white/15 bg-white p-4 shadow-2xl shadow-black/35 md:p-6">
+              <div className="relative flex min-h-[390px] items-center justify-center overflow-hidden p-4 md:p-8 lg:min-h-[470px]">
+                <div className="absolute inset-[12%] rounded-full bg-violet-500/20 blur-[90px]" />
+                <div className="absolute right-[12%] top-[18%] h-36 w-36 rounded-full bg-cyan-400/15 blur-[70px]" />
+                <div className="relative w-full max-w-[500px]">
                   <img
                     src="https://pbs.twimg.com/media/EgVUMDqWkAAec0O.jpg"
                     alt="نموذج التميز المؤسسي: التوجه والتنفيذ والنتائج ومعاييرها"
-                    className="h-auto w-full object-contain"
+                    className="h-auto w-full scale-[1.04] object-contain mix-blend-multiply brightness-[1.08] contrast-[1.12] saturate-[1.18] hue-rotate-[12deg] drop-shadow-[0_24px_45px_rgba(109,40,217,0.22)] dark:mix-blend-screen dark:brightness-[0.92] dark:contrast-[1.18] dark:saturate-[1.3]"
                   />
+                  <div className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-br from-violet-500/5 via-transparent to-cyan-400/5 mix-blend-color" />
                 </div>
               </div>
             </div>
