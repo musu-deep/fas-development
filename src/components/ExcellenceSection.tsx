@@ -146,7 +146,7 @@ export default function ExcellenceSection() {
         <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_.9fr]">
           <div className="rounded-[2rem] border border-primary/15 bg-gradient-to-br from-primary/10 to-card p-8 lg:p-10">
             <div className="mb-5 flex items-center gap-3 text-primary"><Sparkles className="h-6 w-6"/><span className="font-bold">من التشخيص إلى الاستدامة</span></div>
-            <h3 className="text-2xl font-black text-foreground md:text-3xl">نبني القدرة الداخلية، لا ملفاً أنيقاً للتقييم.</h3>
+            <h3 className="text-2xl font-black text-foreground md:text-3xl">تعزيز القدرات المؤسسية</h3>
             <p className="mt-4 max-w-3xl text-sm leading-7 text-muted-foreground">المسار يبدأ بالتقييم، ثم تحديد الأولويات وخارطة الطريق، وتطوير النموذج التشغيلي، وتنفيذ فرص التحسين، ثم قياس النتائج ومراجعتها دورياً.</p>
           </div>
           <div className="flex flex-col justify-center rounded-[2rem] bg-gradient-to-br from-violet-950 to-slate-950 p-8 text-white lg:p-10">
