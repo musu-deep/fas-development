@@ -4,6 +4,7 @@ import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
 import WorkshopsSection from "@/components/WorkshopsSection";
 import ERPSection from "@/components/ERPSection";
+import ExcellenceSection from "@/components/ExcellenceSection";
 import PartnersSection from "@/components/PartnersSection";
 import VisionSection from "@/components/VisionSection";
 import ContactSection from "@/components/ContactSection";
@@ -29,6 +30,11 @@ export default function Home() {
       <div className="section-divider" />
 
       <ERPSection />
+
+      {/* Section Divider */}
+      <div className="section-divider" />
+
+      <ExcellenceSection />
 
       {/* Section Divider */}
       <div className="section-divider" />
