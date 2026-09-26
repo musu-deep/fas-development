@@ -138,7 +138,7 @@ export default function ERPSection() {
           </div>
           <Button asChild size="lg" className="gradient-brand px-7 font-bold text-white shadow-lg shadow-primary/20 hover:opacity-90">
             <a
-              href="https://wa.me/971523034693?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AD%D8%AC%D8%B2%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D8%B9%D9%86%20%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20ERP"
+              href="https://wa.me/966561637935?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AD%D8%AC%D8%B2%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D8%B9%D9%86%20%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20ERP"
               target="_blank"
               rel="noreferrer"
             >
