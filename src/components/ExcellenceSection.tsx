@@ -25,7 +25,7 @@ export default function ExcellenceSection() {
             <div className="absolute inset-0 bg-gradient-to-l from-slate-950/95 via-slate-950/75 to-violet-950/35" />
             <div className="relative z-10 flex min-h-[420px] max-w-4xl flex-col justify-center p-8 text-white md:p-12 lg:p-16">
               <Badge variant="outline" className="mb-5 w-fit border-white/25 bg-white/10 text-violet-100">التميز المؤسسي</Badge>
-              <h2 className="max-w-3xl text-3xl font-black leading-tight md:text-5xl lg:text-6xl">التميز ليس جائزة.<br/><span className="text-violet-200">إنه نظام عمل يتطور باستمرار.</span></h2>
+              <h2 className="max-w-3xl text-3xl font-black leading-tight md:text-5xl lg:text-6xl">التميز ليس جائزة.<br/><span className="text-violet-200">إنه منظومة عمل وثقافة أداء</span></h2>
               <p className="mt-6 max-w-2xl text-base leading-8 text-white/75">نساعد المؤسسات على الانتقال من المبادرات المتفرقة إلى منظومة متكاملة تربط الاستراتيجية بالعمليات والنتائج والتحسين المستمر.</p>
             </div>
           </div>
@@ -65,7 +65,6 @@ export default function ExcellenceSection() {
                   </div>
                 ))}
               </div>
-              <a href="https://efqm.org/the-efqm-model/" target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 text-xs font-semibold text-violet-200 hover:text-white">المصدر الرسمي: EFQM <ArrowLeft className="h-4 w-4"/></a>
             </div>
 
             <div>
@@ -88,7 +87,6 @@ export default function ExcellenceSection() {
                   </div>
                 ))}
               </div>
-              <p className="mt-5 text-xs leading-6 text-muted-foreground">EFQM® علامة مملوكة للمؤسسة الأوروبية لإدارة الجودة. عرض النموذج هنا لأغراض التعريف بالمرجعية والمنهجية، ولا يعني اعتماداً أو شراكة من EFQM.</p>
             </div>
           </div>
         </div>
