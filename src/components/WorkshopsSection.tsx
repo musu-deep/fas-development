@@ -93,7 +93,7 @@ export default function WorkshopsSection() {
               variant="outline"
               className="mb-4 border-primary/30 bg-primary/5 text-primary"
             >
-              البرامج والمختبرات التطبيقية
+              مختبر البرامج التطبيقية
             </Badge>
             <h2 className="mb-5 text-3xl font-black md:text-4xl lg:text-5xl">
               <span className="text-foreground">مسارات عملية تنقل </span>
