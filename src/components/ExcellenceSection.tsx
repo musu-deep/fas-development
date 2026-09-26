@@ -40,9 +40,9 @@ export default function ExcellenceSection() {
                   <img
                     src="https://pbs.twimg.com/media/EgVUMDqWkAAec0O.jpg"
                     alt="نموذج التميز المؤسسي: التوجه والتنفيذ والنتائج ومعاييرها"
-                    className="h-auto w-full scale-[1.04] object-contain mix-blend-multiply brightness-[1.08] contrast-[1.12] saturate-[1.18] hue-rotate-[12deg] drop-shadow-[0_24px_45px_rgba(109,40,217,0.22)] dark:mix-blend-screen dark:brightness-[0.92] dark:contrast-[1.18] dark:saturate-[1.3]"
+                    className="h-auto w-full scale-[1.04] object-contain mix-blend-screen brightness-[0.78] contrast-[1.35] saturate-[1.35] hue-rotate-[18deg] drop-shadow-[0_24px_45px_rgba(109,40,217,0.28)]"
                   />
-                  <div className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-br from-violet-500/5 via-transparent to-cyan-400/5 mix-blend-color" />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-cyan-400/10 mix-blend-color" />
                 </div>
               </div>
             </div>
